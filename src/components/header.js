@@ -10,7 +10,7 @@ const Header = () => (
         <div className="container">
           <div className="nav-wrapper">
             <Link id="logo-link"  to="/" title="Thor Nolan | Portfolio">
-              <StaticImage id="logo-image" src="../images/new-improved-favicon-03.png" loading="eager" alt="Thor Nolan Eclipse Logo" quality={95} formats={["AUTO", "WEBP", "AVIF"]}/>
+              <StaticImage id="logo-image" src="../images/new-improved-favicon-03.png" loading="eager" alt="Thor Nolan Eclipse Logo" quality={95} formats={["AUTO", "WEBP", "AVIF"]} />
             </Link>
             <ul className="right valign-wrapper" id="links">
               <li className="top-nav" id="default">

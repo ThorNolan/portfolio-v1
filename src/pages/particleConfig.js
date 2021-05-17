@@ -1,7 +1,7 @@
 const particleConfig = {
   "particles": {
     "number": {
-      "value": 420,
+      "value": 369,
       "density": {
         "enable": true,
         "value_area": 2550
@@ -84,15 +84,15 @@ const particleConfig = {
       "grab": {
         "distance": 400,
         "line_linked": {
-          "opacity": 1
+          "opacity": 0.8
         }
       },
       "bubble": {
         "distance": 200,
         "size": 4.2,
         "duration": 1.25,
-        "opacity": 8,
-        "speed": 3
+        "opacity": 2,
+        "speed": 2
       },
       "repulse": {
         "distance": 105,
