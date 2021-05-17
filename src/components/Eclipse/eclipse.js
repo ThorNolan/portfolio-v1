@@ -37,7 +37,13 @@ const Eclipse = () => {
     <div>
       <ul ref={sceneEl} id="landing">
         <li data-depth="0.0" data-friction-x="0.1" data-friction-y="0.1" className="layer"></li>
-        <li data-depth="0.2" data-friction-x="0.1" data-friction-y="0.1" className="particle-container layer">
+        <li data-depth="0.10" data-friction-x="0.1" data-friction-y="0.1" className="layer">
+          <StaticImage id="stars-bg" loading="eager" src="../../images/stars-01.png" alt="" quality={95} formats={["AUTO", "WEBP", "AVIF"]}/>
+        </li>
+        <li data-depth="0.15" data-friction-x="0.1" data-friction-y="0.1" className="layer">
+          <StaticImage id="stars-bg" loading="eager" src="../../images/stars-02.png" alt="" quality={95} formats={["AUTO", "WEBP", "AVIF"]}/>
+        </li>
+        <li data-depth="0.20" data-friction-x="0.1" data-friction-y="0.1" className="particle-container layer">
           <Particles
             width={"100vw"}
             height={"150vh"}
@@ -46,12 +52,11 @@ const Eclipse = () => {
             options={particleConfig}
           />
         </li>
-        <li data-depth="0.4" data-friction-x="0.1" data-friction-y="0.1" className="layer"></li>
-        <li data-depth="0.6" data-friction-x="0.1" data-friction-y="0.1" id="sun-container" className="layer">
-          <StaticImage id="sun" loading="eager" src="../images/flat-sun.png" alt="A shining sun with text: portfolio" quality={95} formats={["AUTO", "WEBP", "AVIF"]}/>
+        <li data-depth="0.45" data-friction-x="0.1" data-friction-y="0.1" id="sun-container" className="layer">
+          <StaticImage id="sun" loading="eager" src="../../images/flat-sun.png" alt="A shining sun with text: portfolio" quality={95} formats={["AUTO", "WEBP", "AVIF"]}/>
         </li>
         <li data-depth="0.8" data-friction-x="0.1" data-friction-y="0.1" id="moon-container" className="layer">
-          <StaticImage id="eclipsed" loading="eager" src="../images/new-eclipsed-moon.png" alt="Eclipsed moon with text: Thor Nolan, full-stack web developer and designer" quality={95} formats={["AUTO", "WEBP", "AVIF"]}/>
+          <StaticImage id="eclipsed" loading="eager" src="../../images/new-eclipsed-moon.png" alt="Eclipsed moon with text: Thor Nolan, full-stack web developer and designer" quality={95} formats={["AUTO", "WEBP", "AVIF"]}/>
         </li>
       </ul>
     </div>

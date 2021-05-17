@@ -2,7 +2,7 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Eclipse from "../components/eclipse"
+import Eclipse from "../components/Eclipse/eclipse"
 
 import "../assets/css/main.css"
 

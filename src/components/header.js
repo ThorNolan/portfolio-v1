@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const Header = () => (
   <header>
     <div className="navbar-fixed navigation">
-      <nav className="black">
+      <nav>
         <div className="container">
           <div className="nav-wrapper">
             <Link id="logo-link"  to="/" title="Thor Nolan | Portfolio">
@@ -17,10 +17,10 @@ const Header = () => (
                 <Link className="scroll" id="default" to="/"><span>HOME</span></Link>
               </li>
               <li className="top-nav">
-                <Link className="scroll" to="/page-2/">ABOUT</Link>
+                <Link className="scroll" to="/about/">ABOUT</Link>
               </li>
               <li className="top-nav">
-                <Link className="scroll" to="/page-2/">PROJECTS</Link>
+                <Link className="scroll" to="/about/">PROJECTS</Link>
               </li>
             </ul>
           </div>
