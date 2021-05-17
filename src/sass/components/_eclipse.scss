@@ -2,6 +2,23 @@
 // This file contains styles for the eclipse component on the landing page
 // -----------------------------------------------------------------------------
 
+#landing {
+  background: $alt-bg;
+  @include vendor('background', 'linear-gradient(to bottom, #{$bg-dark}, #{$blue-bg})');
+}
+
+.particle-container {
+  background-color: transparent;
+}
+
+.layer {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 #sun-container, #moon-container {
   margin-left: 25%;
   margin-right: 25%;

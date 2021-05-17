@@ -109,4 +109,4 @@ const particleConfig = {
   "retina_detect": true
 }
 
-export default particleConfig;
+export default particleConfig
