@@ -30,31 +30,31 @@ const particleConfig = {
       "random": true,
       "anim": {
         "enable": true,
-        "speed": 1,
+        "speed": 0.2,
         "opacity_min": 0.1998,
         "sync": false
       }
     },
     "size": {
-      "value": 3,
+      "value": 2,
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 40,
+        "speed": 4,
         "size_min": 0.1,
         "sync": false
       }
     },
     "line_linked": {
       "enable": true,
-      "distance": 13,
+      "distance": 7,
       "color": "#ffffff",
-      "opacity": 0.4,
+      "opacity": 0.3,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 0.75,
+      "speed": 0.06,
       "direction": "none",
       "random": true,
       "straight": false,
