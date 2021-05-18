@@ -1,7 +1,7 @@
 import * as React from "react"
 
-import Layout from "../components/Layout/layout"
-import Seo from "../components/Layout/seo"
+import Layout from "../components/Layout/layout.js"
+import Seo from "../components/Layout/seo.js"
 
 const Projects = () => (
   <Layout>
