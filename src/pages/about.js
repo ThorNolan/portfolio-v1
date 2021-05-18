@@ -1,10 +1,9 @@
 import * as React from "react"
 
-import Layout from "../components/Wrapper/layout.js"
 import Seo from "../components/Wrapper/seo.js"
 
 const About = () => (
-  <Layout>
+  <>
     <Seo title="About" />
     <section className="section page-content" id="about-me">
     <div className="container">
@@ -90,9 +89,9 @@ const About = () => (
         </div>
 
       </div>
-    </div>
-  </section>
-  </Layout>
+      </div>
+    </section>
+  </>
 )
 
 export default About

@@ -23,7 +23,7 @@ module.exports = {
       options: {
         component: require.resolve(`./src/components/Wrapper/layout.js`),
       },
-    }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,

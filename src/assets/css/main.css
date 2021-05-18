@@ -861,7 +861,6 @@ body {
 }
 
 #landing {
-  position: absolute;
   top: 0;
   left: 0;
   height: 200vh;
@@ -1055,7 +1054,7 @@ body {
 }
 
 #sun-container, #moon-container {
-  margin-top: 5%;
+  margin-top: 3%;
   margin-left: 28%;
   margin-right: 25%;
   -webkit-touch-callout: none;

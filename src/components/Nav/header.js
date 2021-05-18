@@ -9,18 +9,47 @@ const Header = () => (
       <nav>
         <div className="container">
           <div className="nav-wrapper">
-            <AniLink swipe direction="up" to="/" title="Thor Nolan | Portfolio" id="logo-link">
-              <StaticImage id="logo-image" src="../../images/new-improved-favicon-03.png" loading="eager" alt="Thor Nolan Eclipse Logo" quality={95} formats={["AUTO", "WEBP", "AVIF"]} />
+            <AniLink 
+              cover direction="up"
+              to="/" title="Thor Nolan | Portfolio"
+              id="logo-link"
+              bg="#663399"
+            >
+              <StaticImage 
+                id="logo-image"
+                src="../../images/new-improved-favicon-03.png"
+                loading="eager" 
+                alt="Thor Nolan Eclipse Logo"
+                quality={95} formats={["AUTO", "WEBP", "AVIF"]}
+              />
             </AniLink>
             <ul className="right valign-wrapper" id="links">
               <li className="top-nav" id="default">
-                <AniLink swipe direction="up" to="/"><span>HOME</span></AniLink>
+                <AniLink 
+                  cover direction="up"
+                  to="/"
+                  bg="../images/stars-02.png"
+                >
+                  <span>HOME</span>
+                </AniLink>
               </li>
               <li className="top-nav">
-                <AniLink swipe direction="up" to="/about/"><span>ABOUT</span></AniLink>
+                <AniLink 
+                  cover direction="up"
+                  to="/about/"
+                  bg="../images/stars-02.png"
+                >
+                  <span>ABOUT</span>
+                </AniLink>
               </li>
               <li className="top-nav">
-                <AniLink swipe direction="up" to="/projects/"><span>PROJECTS</span></AniLink>
+                <AniLink 
+                  cover direction="up"
+                  to="/projects/"
+                  bg="../images/stars-02.png"
+                >
+                  <span>PROJECTS</span>
+                </AniLink>
               </li>
             </ul>
           </div>
