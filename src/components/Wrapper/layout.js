@@ -34,6 +34,7 @@ const Layout = ({ children }) => {
         <link rel="stylesheet" href="assets/css/main.css" />
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
       </Helmet>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>

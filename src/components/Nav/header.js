@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = () => (
@@ -9,18 +9,18 @@ const Header = () => (
       <nav>
         <div className="container">
           <div className="nav-wrapper">
-            <Link id="logo-link"  to="/" title="Thor Nolan | Portfolio">
+            <AniLink swipe direction="up" to="/" title="Thor Nolan | Portfolio" id="logo-link">
               <StaticImage id="logo-image" src="../../images/new-improved-favicon-03.png" loading="eager" alt="Thor Nolan Eclipse Logo" quality={95} formats={["AUTO", "WEBP", "AVIF"]} />
-            </Link>
+            </AniLink>
             <ul className="right valign-wrapper" id="links">
               <li className="top-nav" id="default">
-                <Link className="scroll" id="default" to="/"><span>HOME</span></Link>
+                <AniLink swipe direction="up" to="/"><span>HOME</span></AniLink>
               </li>
               <li className="top-nav">
-                <Link className="scroll" to="/about/">ABOUT</Link>
+                <AniLink swipe direction="up" to="/about/"><span>ABOUT</span></AniLink>
               </li>
               <li className="top-nav">
-                <Link className="scroll" to="/projects/">PROJECTS</Link>
+                <AniLink swipe direction="up" to="/projects/"><span>PROJECTS</span></AniLink>
               </li>
             </ul>
           </div>

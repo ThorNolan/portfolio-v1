@@ -1,8 +1,8 @@
 import * as React from "react"
 
-import Layout from "../components/Layout/layout.js"
-import Seo from "../components/Layout/seo.js"
-import Eclipse from "../components/Eclipse/eclipse"
+import Layout from "../components/Wrapper/layout.js"
+import Seo from "../components/Wrapper/seo.js"
+import Eclipse from "../components/Eclipse/eclipse.js"
 
 import "../assets/css/main.css"
 
