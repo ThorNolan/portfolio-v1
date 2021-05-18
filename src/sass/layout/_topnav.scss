@@ -5,6 +5,11 @@
 .navigation {
   height: 65px;
 
+  nav {
+    background: transparent;
+    box-shadow: none;
+  }
+
   #logo-link {
     position: absolute;
     display: inline-block;
