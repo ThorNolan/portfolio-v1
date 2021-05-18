@@ -17,11 +17,10 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-transition-link`,
     {
-      resolve: `gatsby-plugin-layout`,
+      resolve: `gatsby-plugin-transition-link`,
       options: {
-        component: require.resolve(`./src/components/Wrapper/layout.js`),
+        layout: require.resolve(`./src/components/Wrapper/layout.js`),
       },
     },
     `gatsby-transformer-sharp`,

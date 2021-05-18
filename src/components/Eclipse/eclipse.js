@@ -37,7 +37,25 @@ const Eclipse = () => {
     <div>
       <ul ref={sceneEl} id="landing">
         <li data-depth="0.0" data-friction-x="0.1" data-friction-y="0.1" className="layer"></li>
-        <li data-depth="0.10" data-friction-x="0.1" data-friction-y="0.1" className="layer">
+        <li data-depth="0.05" data-friction-x="0.1" data-friction-y="0.1" className="layer">
+          <StaticImage 
+            loading="eager"
+            src="../../images/stars-even-smaller.png"
+            alt=""
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+          />
+        </li>
+        <li data-depth="0.09" data-friction-x="0.1" data-friction-y="0.1" className="layer">
+          <StaticImage 
+            loading="eager"
+            src="../../images/stars-smallest.png"
+            alt=""
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+          />
+        </li>
+        <li data-depth="0.15" data-friction-x="0.1" data-friction-y="0.1" className="layer">
           <StaticImage 
             id="stars-bg"
             loading="eager"
@@ -47,7 +65,7 @@ const Eclipse = () => {
             formats={["AUTO", "WEBP", "AVIF"]}
           />
         </li>
-        <li data-depth="0.15" data-friction-x="0.1" data-friction-y="0.1" className="layer">
+        <li data-depth="0.2" data-friction-x="0.1" data-friction-y="0.1" className="layer">
           <StaticImage
             id="stars-bg-2"
             loading="eager"
@@ -57,16 +75,16 @@ const Eclipse = () => {
             formats={["AUTO", "WEBP", "AVIF"]}
           />
         </li>
-        <li data-depth="0.20" data-friction-x="0.1" data-friction-y="0.1" className="particle-container layer">
+        <li data-depth="0.30" data-friction-x="0.1" data-friction-y="0.1" className="particle-container layer">
           <Particles
-            width={"100vw"}
-            height={"150vh"}
+            width={"100%"}
+            height={"100%"}
             init={particlesInit}
             loaded={particlesLoaded}
             options={particleConfig}
           />
         </li>
-        <li data-depth="0.45" data-friction-x="0.1" data-friction-y="0.1" id="sun-container" className="layer">
+        <li data-depth="0.55" data-friction-x="0.1" data-friction-y="0.1" id="sun-container" className="layer">
           <StaticImage
             id="sun"
             loading="eager"
@@ -76,7 +94,7 @@ const Eclipse = () => {
             formats={["AUTO", "WEBP", "AVIF"]}
           />
         </li>
-        <li data-depth="0.8" data-friction-x="0.1" data-friction-y="0.1" id="moon-container" className="layer">
+        <li data-depth="0.80" data-friction-x="0.1" data-friction-y="0.1" id="moon-container" className="layer">
           <StaticImage
             id="eclipsed"
             loading="eager"

@@ -723,6 +723,7 @@ body {
 
 .navigation {
   height: 65px;
+  margin-bottom: -65px;
 }
 
 .navigation nav {
@@ -1054,7 +1055,7 @@ body {
 }
 
 #sun-container, #moon-container {
-  margin-top: 3%;
+  margin-top: 2%;
   margin-left: 28%;
   margin-right: 25%;
   -webkit-touch-callout: none;
