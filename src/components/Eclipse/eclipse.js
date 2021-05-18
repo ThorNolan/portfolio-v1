@@ -74,9 +74,6 @@ const Eclipse = () => {
             alt="A shining sun with text: portfolio"
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            data-sal="slide-up"
-            data-sal-delay="300"
-            data-sal-easing="ease"
           />
         </li>
         <li data-depth="0.8" data-friction-x="0.1" data-friction-y="0.1" id="moon-container" className="layer">
@@ -86,9 +83,6 @@ const Eclipse = () => {
             src="../../images/new-eclipsed-moon.png"
             alt="Eclipsed moon with text: Thor Nolan, full-stack web developer and designer"
             quality={95} formats={["AUTO", "WEBP", "AVIF"]}
-            data-sal="slide-up"
-            data-sal-delay="300"
-            data-sal-easing="ease"
           />
         </li>
       </ul>
