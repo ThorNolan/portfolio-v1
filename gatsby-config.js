@@ -33,8 +33,8 @@ module.exports = {
         name: `THOR NOLAN | PORTFOLIO`,
         short_name: `@ThorNolan`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1D1F3C`,
+        theme_color: `#1D1F3C`,
         display: `minimal-ui`,
         icon: `src/images/new-improved-favicon-03.png`, // This path is relative to the root of the site.
       },

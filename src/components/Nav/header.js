@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = () => (
@@ -13,7 +13,7 @@ const Header = () => (
               cover direction="up"
               to="/" title="Thor Nolan | Portfolio"
               id="logo-link"
-              bg="#663399"
+              hex="#1D1F3C"
             >
               <StaticImage 
                 id="logo-image"
@@ -28,7 +28,7 @@ const Header = () => (
                 <AniLink 
                   cover direction="up"
                   to="/"
-                  bg="../images/stars-02.png"
+                  hex="#1D1F3C"
                 >
                   <span>HOME</span>
                 </AniLink>
@@ -37,7 +37,7 @@ const Header = () => (
                 <AniLink 
                   cover direction="up"
                   to="/about/"
-                  bg="../images/stars-02.png"
+                  hex="#1D1F3C"
                 >
                   <span>ABOUT</span>
                 </AniLink>
@@ -46,7 +46,7 @@ const Header = () => (
                 <AniLink 
                   cover direction="up"
                   to="/projects/"
-                  bg="../images/stars-02.png"
+                  hex="#1D1F3C"
                 >
                   <span>PROJECTS</span>
                 </AniLink>
