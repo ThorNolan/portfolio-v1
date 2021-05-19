@@ -9,7 +9,7 @@
     font-size: 2em;
     font-family: $display-text;
     font-weight: 500;
-    color: $light-text;
+    color: $dark-text;
     margin-bottom: 5%;
     margin-top: 10%;
     // text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
@@ -27,7 +27,7 @@
     font-size: 1em;
     font-family: $default;
     font-weight: 300;
-    color: $light-text;
+    color: $dark-text;
     text-align: justify;
 
     @include breakpoint('<=small') {
@@ -36,7 +36,7 @@
   }
 
   a {
-    color: $light-text;
+    color: $dark-text;
     text-decoration: none;
   }
 

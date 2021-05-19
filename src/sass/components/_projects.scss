@@ -3,8 +3,7 @@
 // -----------------------------------------------------------------------------
 
 #projects {
-  background-color: $alt-bg;
-  @include vendor('background', 'linear-gradient(to bottom, #{$alt-bg}, #{$blue-bg})');
+  background-color: $bg-white;
 
   h4 {
     margin-bottom: 2%;
@@ -12,7 +11,7 @@
     font-size: 2em;
     font-family: $display-text;
     font-weight: 500;
-    color: $light-text;
+    color: $dark-text;
     // text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 
     span {
@@ -28,7 +27,7 @@
     font-size: 1em;
     font-family: $default;
     font-weight: 400;
-    color: $light-text;
+    color: $dark-text;
     padding: 4%;
     font-style: italic;
   }
@@ -38,7 +37,7 @@
     font-family: $default;
     font-weight: 400;
     font-style: italic;
-    color: $light-text;
+    color: $dark-text;
     padding: 2%;
   }
 
@@ -99,6 +98,7 @@
 
     &::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
       background-color: #000;
     }
 

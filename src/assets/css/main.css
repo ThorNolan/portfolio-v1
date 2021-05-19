@@ -635,7 +635,7 @@ body {
 }
 
 .material-icons {
-  color: #F5F5F5 !important;
+  color: #232320 !important;
 }
 
 .material-icons.active {
@@ -643,7 +643,7 @@ body {
 }
 
 #page-footer {
-  color: #9e9e9e;
+  color: #232320;
   background-color: #FEFAF6;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -693,7 +693,7 @@ body {
 }
 
 #page-footer .back-to-top i {
-  color: #9e9e9e;
+  color: #232320;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transform: translateY(5px);
@@ -720,13 +720,13 @@ body {
 
 .footer-links li a {
   display: block;
-  color: #9e9e9e;
+  color: #232320;
   text-align: center;
   cursor: pointer;
 }
 
 .footer-links li a i {
-  color: #9e9e9e;
+  color: #232320;
 }
 
 .footer-links li a:hover i {
@@ -856,7 +856,7 @@ body {
   font-size: 2em;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  color: #F5F5F5;
+  color: #232320;
   margin-bottom: 5%;
   margin-top: 10%;
 }
@@ -875,7 +875,7 @@ body {
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  color: #F5F5F5;
+  color: #232320;
   text-align: justify;
 }
 
@@ -886,7 +886,7 @@ body {
 }
 
 #about-me a {
-  color: #F5F5F5;
+  color: #232320;
   text-decoration: none;
 }
 
@@ -1306,9 +1306,7 @@ body {
 }
 
 #projects {
-  background-color: #141414;
-  background: -webkit-gradient(linear, left top, left bottom, from(#141414), to(#1F2140));
-  background: linear-gradient(to bottom, #141414, #1F2140);
+  background-color: #FEFAF6;
 }
 
 #projects h4 {
@@ -1317,7 +1315,7 @@ body {
   font-size: 2em;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  color: #F5F5F5;
+  color: #232320;
 }
 
 #projects h4 span {
@@ -1334,7 +1332,7 @@ body {
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  color: #F5F5F5;
+  color: #232320;
   padding: 4%;
   font-style: italic;
 }
@@ -1344,7 +1342,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: italic;
-  color: #F5F5F5;
+  color: #232320;
   padding: 2%;
 }
 
@@ -1420,6 +1418,7 @@ body {
 
 #projects .card-reveal::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #000;
 }
 
