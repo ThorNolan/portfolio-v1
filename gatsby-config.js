@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `THOR NOLAN | PORTFOLIO`,
+    title: `Thor Nolan | Portfolio`,
     description: `Thor Nolan Portfolio | Full-stack Web Developer & Designer`,
     author: `Thor Nolan`,
   },
@@ -9,6 +9,7 @@ module.exports = {
     `react-tsparticles`,
     `parallax-js`,
     `gsap`,
+    `smooth-scroll`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -29,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `THOR NOLAN | PORTFOLIO`,
+        name: `Thor Nolan | Portfolio`,
         short_name: `@ThorNolan`,
         start_url: `/`,
         background_color: `#1D1F3C`,

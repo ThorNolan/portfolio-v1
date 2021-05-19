@@ -3,8 +3,8 @@
 // -----------------------------------------------------------------------------
 
 .navigation {
-  height: 65px;
-  margin-bottom: -65px;
+  height: 64px;
+  margin-bottom: -64px;
 
   nav {
     background: transparent;
@@ -25,12 +25,13 @@
   }
 
   ul {
-    height: 65px;
+    height: 64px;
     color: $light-text;
     font-family: $default;
     font-weight: 500;
 
     li {
+
       position: relative;
       cursor: pointer;
       margin-left: 5px;

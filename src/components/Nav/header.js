@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const Header = () => (
   <header>
     <div className="navbar-fixed navigation">
-      <nav>
+      <nav id="page-top">
         <div className="container">
           <div className="nav-wrapper">
             <AniLink 
@@ -15,7 +15,7 @@ const Header = () => (
               to="/"
               title="Thor Nolan | Portfolio"
               id="logo-link"
-              bg="url(../../images/big-sur.jpg) center / cover /* position / size */ no-repeat /* repeat /* attachment */ padding-box /* origin */ content-box /* clip */ #1e1e1e /* color */ "
+              bg="url('../../images/big-sur.jpg') center / cover /* position / size */ no-repeat /* repeat /* attachment */ padding-box /* origin */ content-box /* clip */ #1e1e1e /* color */ "
             >
               <StaticImage 
                 id="logo-image"

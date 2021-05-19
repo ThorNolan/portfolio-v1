@@ -722,8 +722,8 @@ body {
 }
 
 .navigation {
-  height: 65px;
-  margin-bottom: -65px;
+  height: 64px;
+  margin-bottom: -64px;
 }
 
 .navigation nav {
@@ -746,7 +746,7 @@ body {
 }
 
 .navigation ul {
-  height: 65px;
+  height: 64px;
   color: #F5F5F5;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -864,8 +864,8 @@ body {
 #landing {
   top: 0;
   left: 0;
-  height: 200vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
   pointer-events: none;
   overflow: hidden;
 }
@@ -923,27 +923,6 @@ body {
   text-decoration: underline;
 }
 
-#about-me #mainPicture {
-  margin-top: 35%;
-  max-width: 185px;
-}
-
-@media screen and (max-width: 980px) {
-  #about-me #mainPicture {
-    margin-top: 15px;
-    margin-bottom: 5%;
-    padding-right: 0;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  #about-me #mainPicture {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-width: 145px;
-  }
-}
-
 #about-me .testimonial {
   margin-top: 10%;
   margin-bottom: 5%;
@@ -982,22 +961,6 @@ body {
 @media screen and (max-width: 480px) {
   #intro {
     margin-top: 25px;
-  }
-}
-
-#divider-img {
-  height: 450px;
-  z-index: -1000;
-  background-image: url("/images/big-sur.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (max-width: 980px) {
-  #divider-img {
-    background-attachment: local;
   }
 }
 
@@ -1055,7 +1018,7 @@ body {
 }
 
 #sun-container, #moon-container {
-  margin-top: 2%;
+  margin-top: 3%;
   margin-left: 28%;
   margin-right: 25%;
   -webkit-touch-callout: none;

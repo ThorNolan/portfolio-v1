@@ -11,7 +11,13 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Header from "../Nav/header"
+import Footer from "../Nav/footer"
 import "./layout.css"
+
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -37,9 +43,10 @@ const Layout = ({ children }) => {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
       </Helmet>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div>
+      <div id="top">
         <main>{children}</main>
       </div>
+      <Footer />
     </>
   )
 }

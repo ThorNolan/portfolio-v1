@@ -1,4 +1,5 @@
 import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Seo from "../components/Wrapper/seo.js"
 
@@ -12,7 +13,15 @@ const About = () => (
       <div className="row about-text">
 
         <div className="col s12 m12 l3 pic-container center-align">
-          <img id="mainPicture" className="center circle responsive-img" src="../images/alt-profile-pic.jpg" alt="Thor Nolan standing behind a sunflower" />
+          <StaticImage 
+            id="mainPicture"
+            className="center circle responsive-img"
+            loading="eager"
+            src="../images/alt-profile-pic.jpg"
+            alt="Thor Nolan standing behind a sunflower"
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+          />
         </div>
 
         <div className="col s12 m12 l9">

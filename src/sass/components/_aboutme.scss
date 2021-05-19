@@ -50,23 +50,6 @@
     }
   }
 
-  #mainPicture {
-    margin-top: 35%;
-    max-width: 185px;
-
-    @include breakpoint('<=medium') {
-      margin-top: 15px;
-      margin-bottom: 5%;
-      padding-right: 0;
-    }
-
-    @include breakpoint('<=small') {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      max-width: 145px;
-    }
-  }
-
   .testimonial {
     margin-top: 10%;
     margin-bottom: 5%;
