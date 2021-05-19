@@ -580,7 +580,6 @@ html {
 
 body, html {
   width: 100%;
-  overflow-x: hidden !important;
 }
 
 /**
@@ -867,7 +866,6 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   pointer-events: none;
-  overflow: hidden;
 }
 
 #about-me {

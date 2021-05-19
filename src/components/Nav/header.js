@@ -10,12 +10,11 @@ const Header = () => (
         <div className="container">
           <div className="nav-wrapper">
             <AniLink 
-              cover 
-              direction="down"
+              fade 
+              duration={2}
               to="/"
               title="Thor Nolan | Portfolio"
               id="logo-link"
-              bg="url('../../images/big-sur.jpg') center / cover /* position / size */ no-repeat /* repeat /* attachment */ padding-box /* origin */ content-box /* clip */ #1e1e1e /* color */ "
             >
               <StaticImage 
                 id="logo-image"
@@ -29,8 +28,8 @@ const Header = () => (
             <ul className="right valign-wrapper" id="links">
               <li className="top-nav" id="default">
                 <AniLink 
-                  cover
-                  direction="down"
+                  fade
+                  duration={2}
                   to="/"
                   bg="#07070D"
                 >
@@ -39,8 +38,8 @@ const Header = () => (
               </li>
               <li className="top-nav">
                 <AniLink 
-                  cover
-                  direction="up"
+                  fade
+                  duration={2}
                   to="/about/"
                   bg="#1E203E"
                 >
@@ -49,8 +48,8 @@ const Header = () => (
               </li>
               <li className="top-nav">
                 <AniLink 
-                  cover
-                  direction="up"
+                  fade
+                  duration={2}
                   to="/projects/"
                   bg="#1E203E"
                 >

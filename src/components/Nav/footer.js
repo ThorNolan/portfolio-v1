@@ -56,7 +56,7 @@ const Footer = () => (
         </li>
       </ul>
 
-      <p>Made with <i className="fa fa-heart" /> by Thor Nolan &#169;2021</p>
+      <p>Made with <i className="fa fa-heart" /> by Thor Nolan {new Date().getFullYear()}</p>
     </div>
   </footer>
 )
