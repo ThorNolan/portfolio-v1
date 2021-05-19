@@ -858,15 +858,10 @@ body {
 }
 
 #landing {
-  top: 0;
-  left: 0;
   min-height: 100vh;
   min-width: 100vw;
-  pointer-events: none;
-}
-
-#landing ul {
   overflow: hidden;
+  pointer-events: none;
 }
 
 #about-me {
