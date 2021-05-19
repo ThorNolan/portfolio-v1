@@ -8,11 +8,11 @@ const Header = () => (
     <div className="navbar-fixed navigation">
       <nav id="page-top">
         <div className="container">
-          <div className="nav-wrapper">
+          <div>
             <AniLink 
               fade 
-              duration={2}
               to="/"
+              duration={2}
               title="Thor Nolan | Portfolio"
               id="logo-link"
             >
@@ -26,32 +26,32 @@ const Header = () => (
               />
             </AniLink>
             <ul className="right valign-wrapper" id="links">
-              <li className="top-nav" id="default">
+              <li>
                 <AniLink 
                   fade
-                  duration={2}
                   to="/"
-                  bg="#07070D"
+                  duration={2}
+                  activeClassName="active"
                 >
                   <span>HOME</span>
                 </AniLink>
               </li>
-              <li className="top-nav">
+              <li>
                 <AniLink 
                   fade
-                  duration={2}
                   to="/about/"
-                  bg="#1E203E"
+                  duration={2}
+                  activeClassName="active"
                 >
                   <span>ABOUT</span>
                 </AniLink>
               </li>
-              <li className="top-nav">
+              <li>
                 <AniLink 
                   fade
-                  duration={2}
                   to="/projects/"
-                  bg="#1E203E"
+                  duration={2}
+                  activeClassName="active"
                 >
                   <span>PROJECTS</span>
                 </AniLink>

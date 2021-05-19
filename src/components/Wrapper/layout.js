@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
+import Preloader from "./preloader"
 import Header from "../Nav/header"
 import Footer from "../Nav/footer"
 import "./layout.css"
@@ -47,6 +48,7 @@ const Layout = ({ children }) => {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
       </Helmet>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Preloader />
       <div id="top">
         <main>{children}</main>
       </div>

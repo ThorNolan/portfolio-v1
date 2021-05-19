@@ -4,4 +4,8 @@
  * See: https://www.gatsbyjs.com/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+export const onPreRouteUpdate = () => {
+  setTimeout(() => {
+      document.getElementById("preloader").style.display = "none"
+  }, 2500)
+}
