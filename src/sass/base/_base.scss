@@ -46,8 +46,6 @@ a {
 
 // Prevents scrollbar from overlapping content for MSIE and hide overflow on the x axis.
 body {
-  -ms-overflow-style: scrollbar;
-  overflow-y: auto;
   background-color: rgba(0,0,0,1);
   color: rgba(255, 255, 255, 0.8);
   -webkit-font-smoothing: antialiased;

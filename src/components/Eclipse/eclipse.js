@@ -34,8 +34,8 @@ const Eclipse = () => {
   );
 
   return (
-    <div>
-      <ul ref={sceneEl} id="landing">
+    <div id="landing">
+      <ul ref={sceneEl}>
         <li data-depth="0.0" data-friction-x="0.1" data-friction-y="0.1" className="layer"></li>
         <li data-depth="0.05" data-friction-x="0.1" data-friction-y="0.1" className="layer">
           <StaticImage 
