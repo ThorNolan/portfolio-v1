@@ -1,9 +1,9 @@
 import * as React from "react"
  
 const Footer = () => (
-  <footer className="section page-footer black valign-wrapper">
-    <div className="container center-align">
-      <div className="center-align top-btn-container">
+  <footer id="page-footer">
+    <div className="container">
+      <div className="top-btn-container">
         <a 
           href="#top"
           className="back-to-top tooltipped"
@@ -15,12 +15,12 @@ const Footer = () => (
         </a>
       </div>
 
-      <ul className="footer-links center-align">
+      <ul className="footer-links">
         <li>
           <a
             href="mailto:tnolan5764@gmail.com"
             id="email"
-            className="tooltipped footer-a"
+            className="tooltipped"
             data-position="bottom"
             data-tooltip="Send me an email"
             aria-label="Email: tnolan5764@gmail.com"
@@ -33,7 +33,7 @@ const Footer = () => (
             target="_blank"
             rel="noreferrer"
             href="https://github.com/ThorNolan"
-            className="footer-a tooltipped"
+            className="tooltipped"
             data-position="bottom"
             data-tooltip="Github"
             aria-label="Github"
@@ -46,7 +46,7 @@ const Footer = () => (
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/thornolan/"
-            className="footer-a tooltipped"
+            className="tooltipped"
             data-position="bottom"
             data-tooltip="LinkedIn"
             aria-label="LinkedIn"

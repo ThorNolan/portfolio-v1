@@ -49,11 +49,11 @@ const Header = () => (
               <li>
                 <AniLink 
                   fade
-                  to="/projects/"
+                  to="/work/"
                   duration={2}
                   activeClassName="active"
                 >
-                  <span>PROJECTS</span>
+                  <span>WORK</span>
                 </AniLink>
               </li>
             </ul>

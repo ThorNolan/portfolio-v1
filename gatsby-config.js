@@ -6,10 +6,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `react-tsparticles`,
-    `parallax-js`,
-    `gsap`,
-    `smooth-scroll`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -39,6 +35,10 @@ module.exports = {
         icon: `src/images/new-improved-favicon-03.png`, // This path is relative to the root of the site.
       },
     },
+    `react-tsparticles`,
+    `parallax-js`,
+    `gsap`,
+    `smooth-scroll`,
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

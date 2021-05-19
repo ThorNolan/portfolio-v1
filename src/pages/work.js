@@ -4,7 +4,7 @@ import Seo from "../components/Wrapper/seo.js"
 
 const Projects = () => (
   <>
-    <Seo title="Projects" />
+    <Seo title="Work" />
     <section className="section page-content" id="projects">
     <div className="container">
       <h4 className="header center"><span>SELECTED PROJECTS</span></h4>
