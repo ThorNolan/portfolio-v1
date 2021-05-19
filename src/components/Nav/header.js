@@ -2,12 +2,26 @@ import * as React from "react"
 import PropTypes from "prop-types"
 // import Link from "gatsby-plugin-transition-link/Link"
 import { Link } from "gatsby"
-
 import { StaticImage } from "gatsby-plugin-image"
 
-const Header = () => (
+
+const Header = () => {
+  const [pos, setPos] = React.useState("top")
+
+  React.useEffect (()=>{
+    document.addEventListener("scroll", e => {
+        let scrolled = document.scrollingElement.scrollTop;
+        if (scrolled >= 5){
+           setPos("moved")
+        } else {
+           setPos("top")
+        }
+    })
+  },[])
+
+  return (
   <header>
-    <div className="navbar-fixed navigation">
+    <div style={{backgroundColor: pos === "top" ? "rgba(254, 250, 246, 0)" : "rgba(254, 250, 246, 0.8)" }} id="navigation">
       <nav id="page-top">
         <div className="container">
           <div>
@@ -25,7 +39,7 @@ const Header = () => (
                 formats={["AUTO", "WEBP", "AVIF"]}
               />
             </Link>
-            <ul className="right valign-wrapper" id="links">
+            <ul id="links">
               <li>
                 <Link 
                   to="/"
@@ -56,7 +70,8 @@ const Header = () => (
       </nav>
     </div>
   </header>
-)
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

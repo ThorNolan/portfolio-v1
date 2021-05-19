@@ -22,7 +22,7 @@
     font-size: 1em;
     font-family: $default;
     font-weight: 300;
-    color: $light-text;
+    color: $dark-text;
     @include vendor('transition', 'all 0.5s');
     @include vendor('transform', '0.78s ease-in-out');
   }
