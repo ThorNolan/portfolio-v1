@@ -3,6 +3,7 @@ module.exports = {
     title: `THOR NOLAN PORTFOLIO`,
     description: `Thor Nolan Portfolio | Full-stack Web Developer & Designer`,
     author: `Thor Nolan`,
+    // siteURL: 'https://thornolan.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

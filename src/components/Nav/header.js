@@ -1,7 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-// import Link from "gatsby-plugin-transition-link/Link"
-import { Link } from "gatsby"
+import Link from "gatsby-plugin-transition-link"
+// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 
@@ -40,6 +40,7 @@ const Header = () => {
                 <Link 
                   to="/about/"
                   activeClassName="active"
+                  partiallyActive={true}
                 >
                   <span>ABOUT</span>
                 </Link>
@@ -48,6 +49,7 @@ const Header = () => {
                 <Link 
                   to="/work/"
                   activeClassName="active"
+                  partiallyActive={true}
                 >
                   <span>WORK</span>
                 </Link>
