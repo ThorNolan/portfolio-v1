@@ -7,59 +7,58 @@ const About = () => (
   <>
     <Seo title="About" />
     <section className="section page-content" id="about-me">
-    <div className="container">
-      <h4 className="center"><span>ABOUT ME</span></h4>
+      <div className="container">
+        <h4 className="center">
+          <span>ABOUT ME</span>
+        </h4>
 
-      <div className="row about-text">
-
-        <div className="col s12 m12 l3 pic-container center-align">
-          <StaticImage 
-            id="mainPicture"
-            className="center circle responsive-img"
-            loading="eager"
-            src="../images/alt-profile-pic.jpg"
-            alt="Thor Nolan standing behind a sunflower"
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
-          />
-        </div>
-
-        <div className="col s12 m12 l9">
-
-          <p className="flow-reveal" id="intro">I'm Thor, a web developer and designer living in
-            the Bay Area, CA. I graduated from Reed College in 2016 and recently completed UC Berkeley
-            Extension's full-stack coding bootcamp. I'm a passionate learner, and always looking for new ways to expand my knowledge and skill-set.</p>
-          <br />
-          <p className="flow-reveal">I'm interested in technology, design, philosophy, politics, teaching, and
-            writing. I appreciate being able to work closely and creatively with people to come up with ideal strategies and solutions.</p>
-          <br />
-          <p className="flow-reveal">When I'm not coding, I like to rock climb at my local climbing gym. I love to travel, and have spent significant
-            time living and exploring in other countries. I also built my desktop PC that I use for playing games or working
-            with 3D rendering software like the Unity engine.</p>
-          <br />
-          <p className="flow-reveal">I am available for freelance work, so if you have a web project that's still in the idea phase <a href="mailto:tnolan5764@gmail.com" id="email" name="tnolan5764@gmail.com">send me an email</a> and we can get started!</p>
-          <br />
-
-          <div className="center-align resume-container">
-            <a href="assets/images/resume.pdf" target="_blank">
-              <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-                <rect className="border-animate" height="60" width="320" />
-              </svg>
-
-              <span className="outlined-text">→ my resume</span>
-            </a>  
+        <div className="row">
+          <div id="profile-pic">
+            <StaticImage 
+              loading="eager"
+              src="../images/profile-pic.jpg"
+              alt="Thor Nolan smiling, sitting in a house made of driftwood"
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+            />
           </div>
 
+          <div className="about-text">
+            <p id="intro">I'm Thor, a web developer and designer living in
+              the Bay Area, CA. I graduated from Reed College in 2016 and went on to complete UC Berkeley
+              Extension's full-stack coding bootcamp. I'm a passionate learner, and always looking for new ways to expand my knowledge and skill-set.</p>
+            <br />
+            <p>I'm interested in technology, design, philosophy, politics, teaching, and
+              writing. I appreciate being able to work closely and creatively with people to come up with ideal strategies and solutions.</p>
+            <br />
+            <p>When I'm not coding, I like to rock climb at my local climbing gym. I also love to travel whenever I can. I built my desktop PC that I use for playing games, designing things in Illustrator, and working with 3D rendering software like the Unity engine.</p>
+            <br />
+            <p>I'm sometimes available for freelance work, so if you have a web project you'd like to work together on <a href="mailto:tnolan5764@gmail.com" id="email" name="tnolan5764@gmail.com">send me an email</a> and we can get started!</p>
+            <br />
+          </div>
         </div>
+
+        <div className="center-align resume-container">
+          <a href="assets/images/resume.pdf" target="_blank">
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+              <rect className="border-animate" height="60" width="320" />
+            </svg>
+
+            <span className="outlined-text">→ my resume</span>
+          </a>  
+        </div>
+
       </div>
 
       <div className="testimonial">
         <p><span>"Fast, affordable, and true to our specifications. Thor took our very old office site and dragged it into the 21st Century adding analytics, making it mobile-friendly, polishing the look and feel, but keeping it simple, as requested. It was like a window-washing in an old house you just can't leave. On another site, Thor supplied us with spot-on guidance to build a site aimed at eliciting public response for a study project. We love his fast, efficient, time on task service."</span> — Brancart & Brancart, client</p>
       </div>
 
-      <h4 className="center"><span>SKILLS</span></h4>
+      <h4 className="center">
+        <span>SKILLS</span>
+      </h4>
 
-      <div className="skills">
+      <div id="skills">
         <div className="skills-wrapper">
           <div className="skills1 box">
             <div className="wave wave-one"></div>
@@ -97,7 +96,6 @@ const About = () => (
           </div>
         </div>
 
-      </div>
       </div>
     </section>
   </>

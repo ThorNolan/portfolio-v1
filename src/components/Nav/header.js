@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
   <header>
-    <div style={{backgroundColor: pos === "top" ? "rgba(254, 250, 246, 0)" : "rgba(254, 250, 246, 0.8)" }} id="navigation">
+    <div id="navigation">
       <nav id="page-top">
         <div className="container">
           <div>

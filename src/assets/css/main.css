@@ -873,13 +873,25 @@ body {
   background-color: #FEFAF6;
 }
 
+#about-me #profile-pic {
+  width: 30%;
+  height: auto;
+  float: left;
+  margin-right: 2rem;
+}
+
+#about-me .about-text {
+  margin-left: 2rem;
+}
+
 #about-me h4 {
   font-size: 2em;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #232320;
   margin-bottom: 5%;
-  margin-top: 10%;
+  padding-top: 5%;
+  text-align: center;
 }
 
 #about-me h4 span {
@@ -945,12 +957,6 @@ body {
 @media screen and (max-width: 736px) {
   #about-me .testimonial p {
     font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  #about-me .about-text {
-    margin-bottom: 25%;
   }
 }
 
@@ -1468,12 +1474,15 @@ video::-webkit-media-controls {
 }
 
 .resume-container {
-  margin-top: 5%;
-  margin-left: 14.5%;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
   height: 60px;
   position: relative;
   width: 305px;
   text-decoration: none;
+  text-align: center;
 }
 
 .resume-container span {
@@ -1582,15 +1591,11 @@ video::-webkit-media-controls {
   }
 }
 
-.skills {
-  margin-bottom: 10%;
-}
-
-.skills h4 {
+#skills h4 {
   padding-top: 2.5%;
 }
 
-.skills .skills-wrapper {
+#skills .skills-wrapper {
   display: -moz-flex;
   display: -ms-flex;
   display: -webkit-box;
@@ -1616,7 +1621,7 @@ video::-webkit-media-controls {
 }
 
 @media screen and (max-width: 736px) {
-  .skills {
+  #skills {
     overflow-x: hidden;
   }
 }

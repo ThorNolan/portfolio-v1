@@ -5,14 +5,25 @@
 #about-me {
   background-color: $bg-white;
 
+  #profile-pic {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-right: 2rem;
+  }
+
+  .about-text {
+    margin-left: 2rem;
+  }
+
   h4 {
     font-size: 2em;
     font-family: $display-text;
     font-weight: 500;
     color: $dark-text;
     margin-bottom: 5%;
-    margin-top: 10%;
-    // text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+    padding-top: 5%;
+    text-align: center;
 
     span {
       border-bottom: 1px dashed $highlight;
@@ -73,11 +84,6 @@
     }
   }
 
-  @include breakpoint('<=small') {
-    .about-text {
-      margin-bottom: 25%;
-    }
-  }
 }
 
 @include breakpoint('<=xsmall') {

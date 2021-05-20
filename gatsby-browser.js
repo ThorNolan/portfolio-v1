@@ -4,8 +4,6 @@
  * See: https://www.gatsbyjs.com/docs/browser-apis/
  */
 
-require('./src/dist/css/main.min.css')
-
 export const onPreRouteUpdate = () => {
   setTimeout(() => {
       document.getElementById("preloader").style.display = "none"
