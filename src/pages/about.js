@@ -25,7 +25,7 @@ const About = () => (
               I like collaborating with people to come up with ideal strategies and solutions.</p>
             <br />
             <p>When I'm not coding, I like to climb at my local climbing gym, and I love to travel whenever I can. I'm interested in technology, politics, philosophy, teaching, 
-              and this beautiful planet we live on. I also built my desktop PC that I use for playing games, designing things in Illustrator, and working with 3D rendering software like the Unity engine.</p>
+              and everything about this beautiful planet we live on. I also built my desktop PC that I use for playing games, designing things in Illustrator, and working with 3D rendering software like the Unity engine.</p>
             <br />
             <p>I'm sometimes available for freelance work, so if you have a web project you'd like to work together on <a href="mailto:tnolan5764@gmail.com" id="email" name="tnolan5764@gmail.com">send me an email</a> and we can chat about it.</p>
             <br />
@@ -53,12 +53,12 @@ const About = () => (
           <div className="skills1 box">
             <div className="wave wave-one"></div>
             <ul className="list-skills">
-              <li><i className="material-icons tiny">keyboard_arrow_right</i> React.js </li>
+              <li><i className="material-icons tiny">keyboard_arrow_right</i> React.js/Redux (and Gatsby) </li>
               <li><i className="material-icons tiny">keyboard_arrow_right</i> Semantic HTML5 </li>
-              <li><i className="material-icons tiny">keyboard_arrow_right</i> CSS3 and SCSS</li>
+              <li><i className="material-icons tiny">keyboard_arrow_right</i> CSS3 and SCSS </li>
               <li><i className="material-icons tiny">keyboard_arrow_right</i> Javascript ES6/7+ </li>
-              <li><i className="material-icons tiny">keyboard_arrow_right</i> jQuery </li>
-              <li><i className="material-icons tiny">keyboard_arrow_right</i> Git/Github branching and workflow </li>
+              <li><i className="material-icons tiny">keyboard_arrow_right</i> Webpack, GraphQL </li>
+              <li><i className="material-icons tiny">keyboard_arrow_right</i> Git branching and workflow </li>
             </ul>
           </div>
 
@@ -67,20 +67,20 @@ const About = () => (
             <ul className="list-skills">
               <li><i className="material-icons tiny">keyboard_arrow_right</i> Node.js </li>
               <li><i className="material-icons tiny">keyboard_arrow_right</i> NPM and many, many packages </li>
-              <li><i className="material-icons tiny">keyboard_arrow_right</i> Express routing </li>
-              <li><i className="material-icons tiny">keyboard_arrow_right</i> MySQL (with Sequelize) </li>
-              <li><i className="material-icons tiny">keyboard_arrow_right</i> MongoDB (with Mongoose) </li>
+              <li><i className="material-icons tiny">keyboard_arrow_right</i> Express server </li>
               <li><i className="material-icons tiny">keyboard_arrow_right</i> Working with RESTful API's </li>
+              <li><i className="material-icons tiny">keyboard_arrow_right</i> ESlint, smoke/unit testing</li>
+              <li><i className="material-icons tiny">keyboard_arrow_right</i> Agile methodologies </li>
             </ul>
           </div>
 
           <div className="skills3 box">
             <div className="wave wave-three"></div>
             <ul className="list-skills">
-              <li><i className="material-icons tiny">keyboard_arrow_right</i> Proficient with Wordpress, Squarespace, and other CMS's</li>
+              <li><i className="material-icons tiny">keyboard_arrow_right</i> Proficient with Wordpress, Squarespace, and other CMS's </li>
               <li><i className="material-icons tiny">keyboard_arrow_right</i> Bootstrap, Materialize, many libraries and frameworks </li>
               <li><i className="material-icons tiny">keyboard_arrow_right</i> Adobe XD/Figma prototyping </li>
-              <li><i className="material-icons tiny">keyboard_arrow_right</i> Agile methodologies</li>
+              <li><i className="material-icons tiny">keyboard_arrow_right</i> Adobe Illustrator </li>
               <li><i className="material-icons tiny">keyboard_arrow_right</i> Writing and research </li>
             </ul>
           </div>
