@@ -6,18 +6,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 
 const Header = () => {
-  const [pos, setPos] = React.useState("top")
-
-  React.useEffect (()=>{
-    document.addEventListener("scroll", e => {
-        let scrolled = document.scrollingElement.scrollTop;
-        if (scrolled >= 5){
-           setPos("moved")
-        } else {
-           setPos("top")
-        }
-    })
-  },[])
 
   return (
   <header>

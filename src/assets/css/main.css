@@ -734,7 +734,6 @@ body {
 }
 
 #navigation {
-  height: 64px;
   position: relative;
   z-index: 997;
 }
@@ -871,17 +870,23 @@ body {
 
 #about-me {
   background-color: #FEFAF6;
+  padding-top: 8rem;
 }
 
 #about-me #profile-pic {
   width: 30%;
   height: auto;
   float: left;
-  margin-right: 2rem;
+  margin-right: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+#about-me .about-row {
+  overflow: hidden;
 }
 
 #about-me .about-text {
-  margin-left: 2rem;
+  padding-right: 2.5rem;
 }
 
 #about-me h4 {
@@ -889,13 +894,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #232320;
-  margin-bottom: 5%;
-  padding-top: 5%;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
   text-align: center;
-}
-
-#about-me h4 span {
-  border-bottom: 1px dashed #FB9C35;
 }
 
 @media screen and (max-width: 736px) {
@@ -963,41 +964,6 @@ body {
 @media screen and (max-width: 480px) {
   #intro {
     margin-top: 25px;
-  }
-}
-
-.transition-svg {
-  margin-bottom: -1.5%;
-  left: 0;
-  width: 100vw;
-  height: 70px;
-  fill: #141414;
-  background: rgba(0, 0, 0, 0);
-}
-
-@media screen and (min-width: 1281px) {
-  .transition-svg {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .transition-svg {
-    margin-bottom: 0;
-    height: 65px;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  .transition-svg {
-    height: 65px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .transition-svg {
-    margin-bottom: -10%;
-    height: 50px;
   }
 }
 
@@ -1334,11 +1300,11 @@ body {
 
 #projects {
   background-color: #FEFAF6;
+  padding-top: 8rem;
 }
 
 #projects h4 {
   margin-bottom: 2%;
-  margin-top: 5%;
   font-size: 2em;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -1569,7 +1535,8 @@ video::-webkit-media-controls {
   font-size: 1.35rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  margin-top: 5%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .box ul {
@@ -1589,6 +1556,10 @@ video::-webkit-media-controls {
     min-height: 295px !important;
     width: 350px;
   }
+}
+
+#skills {
+  padding-bottom: 3rem;
 }
 
 #skills h4 {
