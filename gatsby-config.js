@@ -48,6 +48,8 @@ module.exports = {
     `smooth-scroll`,
     `styled-components`,
     `node-sass`,
+    `@material-ui/core`,
+    `react-awesome-reveal`,
     `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-plugin-offline`,

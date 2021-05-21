@@ -23,7 +23,7 @@ const WaveSkills = () => {
           <div className="wave wave-two"></div>
           <ul className="list-skills">
             <li><i className="material-icons tiny">keyboard_arrow_right</i> Node.js </li>
-            <li><i className="material-icons tiny">keyboard_arrow_right</i> NPM and many, many packages </li>
+            <li><i className="material-icons tiny">keyboard_arrow_right</i> NPM and <i>many</i> packages </li>
             <li><i className="material-icons tiny">keyboard_arrow_right</i> Express server </li>
             <li><i className="material-icons tiny">keyboard_arrow_right</i> Working with RESTful API's </li>
             <li><i className="material-icons tiny">keyboard_arrow_right</i> ESlint, smoke/unit testing</li>

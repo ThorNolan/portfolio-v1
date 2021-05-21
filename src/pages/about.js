@@ -1,5 +1,6 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { Fade } from "react-awesome-reveal";
 
 import Seo from "../components/Wrapper/seo.js"
 import WaveSkills from "../components/WaveSkills/waveSkills.js"
@@ -10,6 +11,7 @@ const About = () => (
     <Seo title="About" />
     <section className="section page-content" id="about-me">
       <div className="container">
+      <Fade direction="up" duration={900}>
         <div className="about-row">
           <div id="profile-pic">
             <StaticImage 
@@ -33,26 +35,30 @@ const About = () => (
               like to work together on <a href="mailto:tnolan5764@gmail.com" id="email" name="tnolan5764@gmail.com">send me an email</a> and we can chat about it.</p>
             <br />
             <p><span role="img" aria-label="wave">🌊</span></p>
-            <div className="center-align resume-container">
-              <a href="assets/images/resume.pdf" target="_blank">
-                <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-                  <rect className="border-animate" height="60" width="320" />
-                </svg>
+            <Fade delay={500} duration={800}>
+              <div className="center-align resume-container">
+                <a href="assets/images/resume.pdf" target="_blank">
+                  <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                    <rect className="border-animate" height="60" width="320" />
+                  </svg>
 
-                <span className="outlined-text">→ my resume</span>
-              </a>  
-            </div>
+                  <span className="outlined-text">→ my resume</span>
+                </a>  
+              </div>
+            </Fade>
           </div>
 
         </div>
-
+      </Fade>
       </div>
-
-      <h4 className="center">
-        <span>WHAT I BRING TO THE TABLE</span>
-      </h4>
-
-      <WaveSkills />
+      <div>
+        <Fade direction="up" duration={1000} delay={1000}>
+          <h4>
+            <span>WHAT I BRING TO THE TABLE</span>
+          </h4>
+        </Fade>
+        <WaveSkills />
+      </div>
     </section>
   </>
 )
