@@ -1,11 +1,17 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import Link from "gatsby-plugin-transition-link"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-
 const Header = (props) => {
+  const getColor = (props) => {
+    const location = props.location;
+    if (location.includes("about") || location.includes("work")) {
+      return "#232320"
+    } else {
+      return "#FEFAF6"
+    }
+  }
 
   return (
   <header>
@@ -33,7 +39,7 @@ const Header = (props) => {
                   to="/"
                   activeClassName="active"
                 >
-                  <span>HOME</span>
+                  <span style={{color: `${getColor(props)}`}}>HOME</span>
                 </Link>
               </li>
               <li>
@@ -42,7 +48,7 @@ const Header = (props) => {
                   activeClassName="active"
                   partiallyActive={true}
                 >
-                  <span>ABOUT</span>
+                  <span style={{color: `${getColor(props)}`}}>ABOUT</span>
                 </Link>
               </li>
               <li>
@@ -51,7 +57,7 @@ const Header = (props) => {
                   activeClassName="active"
                   partiallyActive={true}
                 >
-                  <span>WORK</span>
+                  <span style={{color: `${getColor(props)}`}}>WORK</span>
                 </Link>
               </li>
             </ul>

@@ -20,20 +20,6 @@ const Eclipse = () => {
     return () => parallaxInstance.disable();
   }, [])
 
-  const particlesInit = React.useCallback(
-    () => {
-      console.log('Click happened');
-    },
-    [],
-  );
-
-  const particlesLoaded = React.useCallback(
-    () => {
-      console.log('Click happened');
-    },
-    [],
-  );
-
   return (
     <div>
       <ul ref={sceneEl} id="landing">
@@ -80,8 +66,6 @@ const Eclipse = () => {
           <Particles
             width={"100%"}
             height={"100%"}
-            init={particlesInit}
-            loaded={particlesLoaded}
             options={particleConfig}
           />
         </li>
