@@ -16,7 +16,11 @@
     z-index: 1;
     line-height: 32px;
     text-align: center;
-    @include vendor('transform', 'translate3d(0, 0, 0)');
+    transform: translate3d(0, 0, 0);
+
+    li {
+      margin: 0;
+    }
   }
 
   @include breakpoint('<=large') {
@@ -34,11 +38,11 @@
   }
 
   .skills-wrapper {
-    @include vendor('display', 'flex');
-    @include vendor('flex-direction', 'row');
-    @include vendor('flex-wrap', 'wrap');
-    @include vendor('align-items', 'center');
-    @include vendor('justify-content', 'center');
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   @include breakpoint('<=small') {
@@ -83,15 +87,15 @@
 }
 
 .wave-one {
-  @include vendor('animation', 'wave 19s infinite linear');
+  animation: wave 19s infinite linear;
 }
 
 .wave-two {
-  @include vendor('animation', 'wave 35s infinite linear');
+  animation: wave 35s infinite linear;
 }
 
 .wave-three {
-  @include vendor('animation', 'wave 28s infinite linear');
+  animation: wave 28s infinite linear;
 }
 
 @-moz-keyframes wave {
@@ -108,21 +112,21 @@
 @-webkit-keyframes wave {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   from {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes wave {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   from {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
