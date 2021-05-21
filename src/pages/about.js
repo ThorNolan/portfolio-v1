@@ -2,6 +2,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Seo from "../components/Wrapper/seo.js"
+import "./about.scss"
 
 const About = () => (
   <>
@@ -27,8 +28,10 @@ const About = () => (
             <p>When I'm not coding, I like to climb at my local climbing gym, and I love to travel whenever I can. I'm interested in technology, politics, philosophy, teaching, 
               and everything about this beautiful planet we live on. I also built my desktop PC that I use for playing games, designing things in Illustrator, and working with 3D rendering software like the Unity engine.</p>
             <br />
-            <p>I'm sometimes available for freelance work, so if you have a project you'd like to work together on <a href="mailto:tnolan5764@gmail.com" id="email" name="tnolan5764@gmail.com">send me an email</a> and we can chat about it.</p>
+            <p>I'm sometimes available for freelance work, so if you have a project you'd
+              like to work together on <a href="mailto:tnolan5764@gmail.com" id="email" name="tnolan5764@gmail.com">send me an email</a> and we can chat about it.</p>
             <br />
+            <p><span role="img" aria-label="wave">🌊</span></p>
             <div className="center-align resume-container">
               <a href="assets/images/resume.pdf" target="_blank">
                 <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +81,7 @@ const About = () => (
             <div className="wave wave-three"></div>
             <ul className="list-skills">
               <li><i className="material-icons tiny">keyboard_arrow_right</i> Proficient with Wordpress, Squarespace, and other CMS's </li>
-              <li><i className="material-icons tiny">keyboard_arrow_right</i> Bootstrap, Materialize, many libraries and frameworks </li>
+              <li><i className="material-icons tiny">keyboard_arrow_right</i> Bootstrap, Material UI, many libraries and frameworks </li>
               <li><i className="material-icons tiny">keyboard_arrow_right</i> Adobe XD/Figma prototyping </li>
               <li><i className="material-icons tiny">keyboard_arrow_right</i> Adobe Illustrator </li>
               <li><i className="material-icons tiny">keyboard_arrow_right</i> Writing and research </li>

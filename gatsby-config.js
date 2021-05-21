@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `THOR NOLAN PORTFOLIO`,
-    description: `Thor Nolan Portfolio | Full-stack Web Developer & Designer`,
+    description: `Thor Nolan Portfolio | Full stack Developer & Creative Web Designer`,
     author: `Thor Nolan`,
     // siteURL: 'https://thornolan.com',
   },
@@ -18,11 +18,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-transition-link`,
       options: {
-        layout: require.resolve(`./src/components/Wrapper/layout.js`),
+        layout: require.resolve(`${__dirname}/src/components/Wrapper/layout.js`),
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("node-sass"),
+        additionalData: `@import "./src/scss/main.scss";`,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -41,6 +47,7 @@ module.exports = {
     `gsap`,
     `smooth-scroll`,
     `styled-components`,
+    `node-sass`,
     `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-plugin-offline`,

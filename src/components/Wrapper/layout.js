@@ -7,7 +7,7 @@ import { useLocation } from "@reach/router"
 import Preloader from "./preloader"
 import Header from "../Nav/header"
 import Footer from "../Nav/footer"
-import "./layout.css"
+import "./layout.scss"
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require

@@ -1,7 +1,3 @@
-// -----------------------------------------------------------------------------
-// This file contains styles for the projects section
-// -----------------------------------------------------------------------------
-
 #projects {
   background-color: $bg-white;
   padding-top: 8rem;
@@ -51,7 +47,7 @@
     padding-bottom: 2%;
 
     i {
-      @include vendor('transition', 'all 0.4s');
+      transition: all 0.4s;
       font-size: 22px;
       margin-left: 0;
       color: $light-text !important; 
@@ -71,11 +67,11 @@
 
   .card-action {
     p {
-      @include vendor('display', 'flex');
-      @include vendor('flex-direction', 'row');
-      @include vendor('flex-wrap', 'no-wrap');
-      @include vendor('align-items', 'center');
-      @include vendor('justify-content', 'space-evenly');
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      align-items: center;
+      justify-content: space-evenly;
 
       a {
         margin: 0;
@@ -120,7 +116,7 @@ video::-webkit-media-controls {
 }
 
 .activator video {
-  @include vendor('object-fit', 'cover');
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }

@@ -4,6 +4,7 @@ import Particles from "react-tsparticles"
 import Parallax from "parallax-js"
 
 import particleConfig from "./particleConfig.js"
+import "./eclipse.scss"
 
 const Eclipse = () => {
   const sceneEl = React.useRef(null);

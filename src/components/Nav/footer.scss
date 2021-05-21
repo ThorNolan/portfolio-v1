@@ -1,7 +1,3 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
-
 .material-icons {
   color: $dark-text !important;
 }
@@ -18,8 +14,8 @@
   height: 250px;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  @include vendor('display', 'flex');
-  @include vendor('align-items', 'center');
+  display: flex;
+  align-items: center;
 
   p {
     text-align: center;
@@ -50,13 +46,13 @@
   .back-to-top {
     i {
       color: $dark-text;
-      @include vendor('transition', 'all 0.5s');
-      @include vendor('transform', 'translateY(5px)');
+      transition: all 0.5s;
+      transform: translateY(5px);
     }
 
     &:hover i {
       color: $highlight;
-      @include vendor('transform', 'translateY(-7px)');
+      transform: translateY(-7px);
     }
   }
 }

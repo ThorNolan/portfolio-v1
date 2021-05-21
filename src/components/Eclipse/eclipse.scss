@@ -1,14 +1,10 @@
-// -----------------------------------------------------------------------------
-// This file contains styles for the eclipse component on the landing page
-// -----------------------------------------------------------------------------
-
 #landing {
   min-height: 100vh;
   min-width: 100vw;
   overflow: hidden;
   pointer-events: none;
   background: $alt-bg;
-  @include vendor('background', 'linear-gradient(to bottom, #{$bg-dark}, #{$blue-bg})');
+  background: linear-gradient(to bottom, #{$bg-dark}, #{$blue-bg});
 }
 
 .particle-container {

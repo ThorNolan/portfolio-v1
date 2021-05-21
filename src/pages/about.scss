@@ -1,6 +1,68 @@
-// -----------------------------------------------------------------------------
-// This file contains styles for the resume container button with outline animation
-// -----------------------------------------------------------------------------
+#about-me {
+  background-color: $bg-white;
+  padding-top: 8rem;
+
+  #profile-pic {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-right: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .about-row {
+    overflow: hidden;
+  }
+
+  .about-text {
+    padding-right: 2.5rem;
+  }
+
+  h4 {
+    font-size: 2em;
+    font-family: $display-text;
+    font-weight: 500;
+    color: $dark-text;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+
+    @include breakpoint('<=small') {
+      font-size: 1.5em;
+    }
+  }
+
+  p {
+    font-size: 1em;
+    font-family: $default;
+    font-weight: 300;
+    color: $dark-text;
+    text-align: justify;
+
+    @include breakpoint('<=small') {
+      font-size: 0.8em;
+    }
+  }
+
+  a {
+    color: $dark-text;
+    text-decoration: none;
+  }
+
+  #email {
+    color: $highlight;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@include breakpoint('<=xsmall') {
+  #intro {
+    margin-top: 25px;
+  }
+}
 
 .resume-container {
   margin-top: 8%;
@@ -26,8 +88,8 @@
     font-family: $default;
     font-weight: 300;
     color: $dark-text;
-    @include vendor('transition', 'all 0.5s');
-    @include vendor('transform', '0.78s ease-in-out');
+    transition: all 0.5s;
+    transform: 0.78s ease-in-out;
   }
 
   .border-animate {
@@ -40,11 +102,11 @@
 
   &:hover {
     .border-animate {
-      @include vendor('animation', '0.5s draw linear forwards')
+      animation: 0.5s draw linear forwards;
     }
 
     span {
-      @include vendor('transform', 'scale(1.1)')
+      transform: scale(1.1);
     }
   }
 
@@ -95,4 +157,3 @@
     stroke-width: 2px;
   }
 }
-

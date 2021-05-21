@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import Link from "gatsby-plugin-transition-link"
 import { StaticImage } from "gatsby-plugin-image"
 
+import "./header.scss"
+
 const Header = (props) => {
   const getColor = (props) => {
     const location = props.location;

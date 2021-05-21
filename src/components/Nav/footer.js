@@ -1,4 +1,6 @@
 import * as React from "react"
+
+import "./footer.scss"
  
 const Footer = () => (
   <footer id="page-footer">

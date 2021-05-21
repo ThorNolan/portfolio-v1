@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import Seo from "../components/Wrapper/seo.js"
+import "./work.scss"
 
 const Projects = () => (
   <>

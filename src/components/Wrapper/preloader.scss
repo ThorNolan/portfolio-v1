@@ -1,7 +1,3 @@
-// -----------------------------------------------------------------------------
-// This file contains styles for the gooey preloader component
-// -----------------------------------------------------------------------------
-
 .loader-container {
   width: 100vw;
   height: 100vh;
@@ -10,18 +6,16 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 1);
-  @include vendor('display', 'flex');
-  @include vendor('justify-content', 'center');
-  @include vendor('align-items', 'center');
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 .loading-gooey {
   width: 155px;
   height: 155px;
-  // -webkit-filter: url("#gooey-filter");
-  // filter: url("#gooey-filter");
-  @include vendor('filter', 'url("#gooey-filter")');
+  filter: url("#gooey-filter");
   -webkit-animation: "loading-gooeycontainer" 4s ease-in-out infinite;
   animation: "loading-gooeycontainer" 4s ease-in-out infinite;
 }
