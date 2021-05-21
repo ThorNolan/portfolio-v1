@@ -1,14 +1,8 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
+import { useLocation } from "@reach/router"
 
 import Preloader from "./preloader"
 import Header from "../Nav/header"
@@ -30,6 +24,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  const { href } = useLocation();
 
   React.useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
@@ -43,7 +38,7 @@ const Layout = ({ children }) => {
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
       </Helmet>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} location={href} />
       <Preloader />
       <div id="top">
         <main>{children}</main>

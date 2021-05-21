@@ -27,7 +27,7 @@ const About = () => (
             <p>When I'm not coding, I like to climb at my local climbing gym, and I love to travel whenever I can. I'm interested in technology, politics, philosophy, teaching, 
               and everything about this beautiful planet we live on. I also built my desktop PC that I use for playing games, designing things in Illustrator, and working with 3D rendering software like the Unity engine.</p>
             <br />
-            <p>I'm sometimes available for freelance work, so if you have a web project you'd like to work together on <a href="mailto:tnolan5764@gmail.com" id="email" name="tnolan5764@gmail.com">send me an email</a> and we can chat about it.</p>
+            <p>I'm sometimes available for freelance work, so if you have a project you'd like to work together on <a href="mailto:tnolan5764@gmail.com" id="email" name="tnolan5764@gmail.com">send me an email</a> and we can chat about it.</p>
             <br />
             <div className="center-align resume-container">
               <a href="assets/images/resume.pdf" target="_blank">

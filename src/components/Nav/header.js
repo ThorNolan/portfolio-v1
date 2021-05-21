@@ -5,7 +5,7 @@ import Link from "gatsby-plugin-transition-link"
 import { StaticImage } from "gatsby-plugin-image"
 
 
-const Header = () => {
+const Header = (props) => {
 
   return (
   <header>
