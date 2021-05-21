@@ -21,8 +21,7 @@
 
 // 2. Vendors
 @import
-  'vendors/normalize',
-  'vendors/html-grid';
+  'vendors/normalize';
 
 // 3. Base stuff
 @import
@@ -32,8 +31,7 @@
 // 4. Layout-related sections
 @import
   'layout/footer',
-  'layout/topnav',
-  'layout/wrapper';
+  'layout/topnav';
 
 // 5. Components
 @import
