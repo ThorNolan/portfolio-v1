@@ -60,32 +60,6 @@
       text-decoration: underline;
     }
   }
-
-  .testimonial {
-    margin-top: 10%;
-    margin-bottom: 5%;
-
-    p {
-      color: $highlight;
-      font-size: 16px;
-      font-weight: 400;
-
-      span {
-        font-style: italic;
-        font-size: 16px;
-        font-weight: 400;
-
-        @include breakpoint('<=small') {
-          font-size: 14px;
-        }
-      }
-
-      @include breakpoint('<=small') {
-        font-size: 14px;
-      }
-    }
-  }
-
 }
 
 @include breakpoint('<=xsmall') {

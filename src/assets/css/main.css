@@ -932,35 +932,6 @@ body {
   text-decoration: underline;
 }
 
-#about-me .testimonial {
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-
-#about-me .testimonial p {
-  color: #FB9C35;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-#about-me .testimonial p span {
-  font-style: italic;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-@media screen and (max-width: 736px) {
-  #about-me .testimonial p span {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  #about-me .testimonial p {
-    font-size: 14px;
-  }
-}
-
 @media screen and (max-width: 480px) {
   #intro {
     margin-top: 25px;
@@ -1024,32 +995,6 @@ body {
     width: 380px;
     height: auto;
   }
-}
-
-.linkedin-btn {
-  background-color: #0077B5;
-}
-
-.linkedin-btn:hover {
-  background-color: #0077B5 !important;
-}
-
-.fab {
-  background: #FF4E50;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#F9D423), to(#FF4E50));
-  background: linear-gradient(to bottom, #F9D423, #FF4E50);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.fab:hover {
-  background: #FF4E50;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#F9D423), to(#FF4E50));
-  background: linear-gradient(to bottom, #F9D423, #FF4E50);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .brand-logo {
@@ -1529,14 +1474,13 @@ video::-webkit-media-controls {
 .box {
   position: relative;
   overflow: hidden;
-  border-radius: 3%;
+  border-radius: 8%;
   min-height: 325px !important;
   width: 425px;
   font-size: 1.35rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin: 2.5rem;
 }
 
 .box ul {
@@ -1584,11 +1528,11 @@ video::-webkit-media-controls {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -moz-justify-content: space-evenly;
-  -ms-justify-content: space-evenly;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 736px) {
