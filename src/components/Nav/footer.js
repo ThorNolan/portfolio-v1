@@ -3,7 +3,7 @@ import * as React from "react"
 import "./footer.scss"
  
 const Footer = () => (
-  <footer id="down">
+  <footer id="footer">
     <div className="container">
       <div className="top-btn-container">
         <a 

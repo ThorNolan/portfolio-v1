@@ -11,7 +11,7 @@ const About = () => (
     <Seo title="About" />
     <section className="section page-content" id="about-me">
       <div className="container">
-      <Fade cascade direction="up" duration={500}>
+      <Fade cascade direction="up" duration={450}>
         <div className="about-row">
           <div id="profile-pic">
             <StaticImage 
@@ -42,7 +42,7 @@ const About = () => (
                 </svg>
 
                 <span className="outlined-text">→ my resume</span>
-              </a>  
+              </a>
             </div>
           </div>
 
@@ -50,21 +50,19 @@ const About = () => (
       </Fade>
       </div>
       <div>
-        <Fade cascade direction="up" duration={500} delay={1000}>
-          <h4>
-            <span>WHAT I BRING TO THE TABLE</span>
-          </h4>
+        <Fade cascade direction="up" duration={450} delay={650}>
           <div className="down-button-container">
             <a
-              id="down"
               href="#down"
               aria-label="WHAT I BRING TO THE TABLE"
             >
+              <h4>WHAT I BRING TO THE TABLE</h4>
               <i className="fa fa-chevron-down fa-lg" />
             </a>
           </div>
         </Fade>
         <WaveSkills />
+        <div id="down"></div>
       </div>
     </section>
   </>
