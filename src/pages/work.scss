@@ -1,6 +1,6 @@
 #work {
   background-color: $bg-white;
-  padding-top: 8rem;
+  padding-top: 7rem;
 
   h4 {
     margin-bottom: 3rem;
@@ -16,25 +16,34 @@
   }
 
   h5 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-family: $display-text;
     font-weight: 500;
     color: $light-text;
-    padding: 4%;
-    float: left;
   }
 
-  .clearfix {
-    overflow: auto;
+  #websites {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1260px;
   }
 
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+  #code-projects {
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1260px;
   }
 
   .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: $wave2;
     background: -webkit-linear-gradient(to right, $wave2, $wave1);
     background: linear-gradient(to right, $wave2, $wave1);
@@ -44,6 +53,17 @@
     background: $wave2;
     background: -webkit-linear-gradient(to right, $wave2, $wave1);
     background: linear-gradient(to right, $wave2, $wave1);
+
+    p {
+      color: $light-text;
+      font-size: 1em;
+      font-family: $default;
+      font-weight: 400;
+    }
+
+    .collapse-content {
+      min-height: 420px;
+    }
   }
 
   .card-action {
@@ -51,7 +71,7 @@
       margin: 0;
       padding: 0;
       color: $highlight;
-      font-size: 0.6em;
+      font-size: 1em;
       font-family: $default;
       font-weight: 400;
     }

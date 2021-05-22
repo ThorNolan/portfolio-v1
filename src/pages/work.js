@@ -12,14 +12,18 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Seo from "../components/Wrapper/seo.js";
 import "./work.scss";
 import buddhasPalm from "../images/bp-demo-vid.mp4";
+import spp from "../images/spp-demo-vid.mp4";
+import jk from "../images/jaya-kratom-screenshot-standin.png";
+import lynnlottec from "../images/lynnlottec-demo-vid.mp4";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 400,
+    maxWidth: 350,
+    margin: '1.3rem',
   },
   media: {
     height: 0,
-    paddingBottom: '45%',
+    paddingBottom: '47.5%',
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -45,10 +49,9 @@ const Work = () => {
   return (
     <>
     <Seo title="Work" />
-    <section className="section page-content" id="work">
-      <div className="container">
-        <h4 className="header">WEBSITES</h4>
-
+    <section id="work">
+      <h4>WEBSITES</h4>
+      <div className="container" id="websites">
         <Card className={classes.root}>
           <CardMedia
             children
@@ -67,62 +70,141 @@ const Work = () => {
               })}
               onClick={handleExpandClick}
               aria-expanded={expanded}
-              aria-label="details"
+              aria-label="Project Details"
             >
               <ExpandMoreIcon />
             </IconButton>
           </CardContent>
           <Collapse in={expanded} timeout="auto" unmountOnExit className="card-collapse">
-            <CardContent>
+            <CardContent className="collapse-content">
+              <Typography paragraph>
+                A custom website I designed and developed for my client, Buddha's Palm Tattoo & Art Gallery. 
+                I made the site using HTML, CSS and JavaScript, and relied heavily on my knowledge of SCSS and 
+                flex-box layouts to accomplish the design, animations, and responsiveness. I used a mobile-first approach to creating this 
+                site and designed a distinct mobile layout as well.
+              </Typography>
               <div className="card-action">
                 <a href="https://buddhaspalmtattoogallery.com/" target="_blank" rel="noreferrer">[visit the site]</a>
               </div>
-              <Typography paragraph>
-              A custom website I designed and developed for my client, Buddha's Palm Tattoo & Art Gallery. 
-              I made the site using HTML, CSS and JavaScript, and relied heavily on my knowledge of SCSS and 
-              flex-box layouts to accomplish the design, animations, and responsiveness. I used a mobile-first approach to creating this 
-              site and designed a distinct mobile layout as well.
-              </Typography>
             </CardContent>
           </Collapse>
         </Card>
 
-        <div className="row">
-
+        <Card className={classes.root}>
+          <CardMedia
+            children
+            className={classes.media}
+            title="Lynn Lott Encouragement Consulting"
+          >
+            <video src={lynnlottec} width='100%' height='auto' autoPlay loop muted playsInline/>
+          </CardMedia>
+          <CardContent className="card-body clearfix">
+            <Typography variant="body2" component="h5" className="client-title">
+              Lynn Lott EC
+            </Typography>
+            <IconButton
+              className={clsx(classes.expand, {
+                [classes.expandOpen]: expanded,
+              })}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="Project Details"
+            >
+              <ExpandMoreIcon />
+            </IconButton>
+          </CardContent>
+          <Collapse in={expanded} timeout="auto" unmountOnExit className="card-collapse">
+            <CardContent className="collapse-content">
+              <Typography paragraph>
+                Another customised Wordpress theme that I made for my client Lynn Lott Encouragement Consulting. I utilized many tools to 
+                accomplish this advanced site, which allows for user uploaded profiles and offers a login-gated area for certified trainers, along with many other functionalities. 
+                As many of the trainers are located internationally, I needed to set up a pay-server that would take payments from China as well. 
+              </Typography>
               <div className="card-action">
-                <p><a href="https://buddhaspalmtattoogallery.com/" target="_blank" rel="noreferrer">[visit the site]</a></p>
+                <a href="https://www.jlynnlottec.com/" target="_blank" rel="noreferrer">[visit the site]</a>
               </div>
-            
+            </CardContent>
+          </Collapse>
+        </Card>
 
-          <div className="col s12 m8 offset-m2 l4">
-            <div className="card small black hoverable sticky-action">
-              <div className="card-image waves-effect waves-block waves-light">
-                <video className="activator responsive-video" autoPlay loop muted playsInline>
-                  <source src="../images/spp-demo-vid.mp4" type="video/mp4" />
-                </video>
-              </div>
-                      
-              <div className="card-content">
-                <span className="card-title activator">Staring Problem Press<i className="material-icons right">search</i></span>
-              </div>
-                      
+        <Card className={classes.root}>
+          <CardMedia
+            children
+            className={classes.media}
+            title="Jaya Kratom"
+          >
+            <img src={jk} width='100%' height='auto' alt="Jaya Quality Kratom Dispensary" />
+          </CardMedia>
+          <CardContent className="card-body clearfix">
+            <Typography variant="body2" component="h5" className="client-title">
+              Jaya Kratom
+            </Typography>
+            <IconButton
+              className={clsx(classes.expand, {
+                [classes.expandOpen]: expanded,
+              })}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="Project Details"
+            >
+              <ExpandMoreIcon />
+            </IconButton>
+          </CardContent>
+          <Collapse in={expanded} timeout="auto" unmountOnExit className="card-collapse">
+            <CardContent className="collapse-content">
+              <Typography paragraph>
+                <i>COMING SOON</i>
+                <br />
+                A fully customised Wordpress theme that I made for my client Jaya Kratom, a Kratom dispensary based in Portland, OR. 
+                I leveraged Elementor pro and my own custom CSS to accomplish the design, and set up a BTC payserver to accept alternative currencies.
+              </Typography>
               <div className="card-action">
-                <p><a href="https://www.staringproblempress.com/" target="_blank" rel="noreferrer">[visit the site]</a></p>
+                <a href="https://www.jayakratom.com/" target="_blank" rel="noreferrer">[visit the site]</a>
               </div>
-                      
-              <div className="card-reveal black">
-                <span className="card-title">Staring Problem Press<i className="material-icons right">close</i></span>
-                  <p>A site for user submitted chapbook creation and sale that I designed and customised using the Squarespace CMS, at the request of my client Staring Problem Press. My goal was to deliver them a customized theme that includes my own HTML and CSS, that would require no further maintanence on their part, which allowed them to focus solely on the commerce aspect of the site.</p>
-                  <br />
+            </CardContent>
+          </Collapse>
+        </Card>
+
+        <Card className={classes.root}>
+          <CardMedia
+            children
+            className={classes.media}
+            title="Staring Problem Press"
+          >
+            <video src={spp} width='100%' height='auto' autoPlay loop muted playsInline/>
+          </CardMedia>
+          <CardContent className="card-body clearfix">
+            <Typography variant="body2" component="h5" className="client-title">
+              Staring Problem Press
+            </Typography>
+            <IconButton
+              className={clsx(classes.expand, {
+                [classes.expandOpen]: expanded,
+              })}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="Project Details"
+            >
+              <ExpandMoreIcon />
+            </IconButton>
+          </CardContent>
+          <Collapse in={expanded} timeout="auto" unmountOnExit className="card-collapse">
+            <CardContent className="collapse-content">
+              <Typography paragraph>
+                A site for user submitted chapbook creation and sale that I designed and customised using the Squarespace CMS, at the request of my client 
+                Staring Problem Press. My goal was to deliver them a customized theme that includes my own HTML and CSS, that would require no further maintanence 
+                on their part, which allowed them to focus solely on the commerce aspect of the site.
+              </Typography>
+              <div className="card-action">
+                <a href="https://www.staringproblempress.com/" target="_blank" rel="noreferrer">[visit the site]</a>
               </div>
-            </div>
-          </div>
-        </div>
+            </CardContent>
+          </Collapse>
+        </Card>
       </div>
 
-      <div className="container">
-        <h5 className="header center">APPS & GAMES</h5>
-
+      <div className="container" id="code-projects">
+        <h4>CODE PROJECTS</h4>
         <div className="row">
 
           <div className="col s12 m8 offset-m2 l4">
