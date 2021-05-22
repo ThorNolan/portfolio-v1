@@ -3,11 +3,11 @@ import * as React from "react"
 import "./footer.scss"
  
 const Footer = () => (
-  <footer id="page-footer">
+  <footer id="down">
     <div className="container">
       <div className="top-btn-container">
         <a 
-          href="#top"
+          href="#up"
           className="back-to-top tooltipped"
           data-position="left"
           data-tooltip="Back to top"

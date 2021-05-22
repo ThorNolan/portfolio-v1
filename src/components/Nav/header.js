@@ -18,7 +18,7 @@ const Header = (props) => {
   return (
   <header>
     <div id="navigation">
-      <nav id="page-top">
+      <nav id="up">
         <div className="container">
           <div>
             <Link 

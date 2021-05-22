@@ -119,6 +119,17 @@
   }
 }
 
+.down-button-container {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+#down {
+  margin: auto;
+}
+
 @-moz-keyframes draw {
   0% {
     stroke-dasharray: 140 540;
