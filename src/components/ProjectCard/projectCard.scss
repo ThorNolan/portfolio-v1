@@ -1,0 +1,42 @@
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $wave2;
+  background: -webkit-linear-gradient(to right, $wave2, $wave1);
+  background: linear-gradient(to right, $wave2, $wave1);
+}
+
+.card-collapse {
+  background: $wave2;
+  background: -webkit-linear-gradient(to right, $wave2, $wave1);
+  background: linear-gradient(to right, $wave2, $wave1);
+
+  p {
+    color: $light-text;
+    font-size: 1em;
+    font-family: $default;
+    font-weight: 400;
+  }
+
+  .collapse-content {
+    min-height: 420px;
+  }
+}
+
+.card-action {
+  a {
+    margin: 0;
+    padding: 0;
+    color: $highlight;
+    font-size: 1em;
+    font-family: $default;
+    font-weight: 400;
+  }
+}
+
+/* styling for videos on project cards */
+video::-webkit-media-controls {
+  display: none !important;
+}
