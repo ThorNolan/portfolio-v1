@@ -1,25 +1,25 @@
-import * as React from "react"
+import * as React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-import Seo from "../components/Wrapper/seo.js"
-import "./work.scss"
+import Seo from "../components/Wrapper/seo.js";
+import "./work.scss";
+import buddhasPalm from "../images/bp-demo-vid.mp4";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    maxWidth: 400,
   },
   media: {
     height: 0,
-    paddingTop: '56.25%', // 16:9
+    paddingBottom: '45%',
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
 const Work = () => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
@@ -44,77 +45,54 @@ const Work = () => {
   return (
     <>
     <Seo title="Work" />
-    <section className="section page-content" id="projects">
+    <section className="section page-content" id="work">
       <div className="container">
-        <h5 className="header center">WEBSITES</h5>
+        <h4 className="header">WEBSITES</h4>
 
         <Card className={classes.root}>
           <CardMedia
+            children
             className={classes.media}
-            image="/static/images/cards/paella.jpg"
-            title="Paella dish"
-          />
-          <CardContent>
-            <Typography variant="body2" color="textSecondary" component="p">
-              This impressive paella is a perfect party dish and a fun meal to cook together with your
-              guests. Add 1 cup of frozen peas along with the mussels, if you like.
+            title="Buddha's Palm Tattoo and Art Gallery"
+          >
+            <video src={buddhasPalm} width='100%' height='auto' autoPlay loop muted playsInline/>
+          </CardMedia>
+          <CardContent className="card-body clearfix">
+            <Typography variant="body2" component="h5" className="client-title">
+              Buddha's Palm Tattoo
             </Typography>
-          </CardContent>
-          <CardActions disableSpacing>
             <IconButton
               className={clsx(classes.expand, {
                 [classes.expandOpen]: expanded,
               })}
               onClick={handleExpandClick}
               aria-expanded={expanded}
-              aria-label="show more"
+              aria-label="details"
             >
               <ExpandMoreIcon />
             </IconButton>
-          </CardActions>
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
+          </CardContent>
+          <Collapse in={expanded} timeout="auto" unmountOnExit className="card-collapse">
             <CardContent>
-              <Typography paragraph>Method:</Typography>
+              <div className="card-action">
+                <a href="https://buddhaspalmtattoogallery.com/" target="_blank" rel="noreferrer">[visit the site]</a>
+              </div>
               <Typography paragraph>
-                Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10
-                minutes.
-              </Typography>
-              <Typography paragraph>
-                Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high
-                heat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until lightly
-                browned, 6 to 8 minutes. Transfer shrimp to a large plate and set aside, leaving chicken
-                and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion, salt and
-                pepper, and cook, stirring often until thickened and fragrant, about 10 minutes. Add
-                saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
+              A custom website I designed and developed for my client, Buddha's Palm Tattoo & Art Gallery. 
+              I made the site using HTML, CSS and JavaScript, and relied heavily on my knowledge of SCSS and 
+              flex-box layouts to accomplish the design, animations, and responsiveness. I used a mobile-first approach to creating this 
+              site and designed a distinct mobile layout as well.
               </Typography>
             </CardContent>
           </Collapse>
         </Card>
 
         <div className="row">
-          <div className="col s12 m8 offset-m2 l4">
-            <div className="card small black hoverable sticky-action">
-              <div className="card-image waves-effect waves-block waves-light">
-                <video className="activator responsive-video" autoPlay loop muted playsInline>
-                  <source src="../images/bp-demo-vid.mp4" type="video/mp4" />
-                </video>
-              </div>
-            
-              <div className="card-content">
-                <span className="card-title activator">Buddha's Palm Tattoo<i className="material-icons right">search</i></span>
-              </div>
-            
+
               <div className="card-action">
                 <p><a href="https://buddhaspalmtattoogallery.com/" target="_blank" rel="noreferrer">[visit the site]</a></p>
               </div>
             
-              <div className="card-reveal black">
-                <span className="card-title">Buddha's Palm Tattoo<i className="material-icons right">close</i></span>
-                  <p>A custom website I designed and developed for my client, Buddha's Palm Tattoo & Art Gallery. I made the site using HTML, CSS and JavaScript, and relied heavily on my knowledge of SCSS and flex-box grid to accomplish the design, animations, and responsiveness. I used a mobile-first approach to creating this site and designed a distinct mobile layout as well (my analytics have shown since that almost 70% of site visitors are using their mobile device!).</p>
-                  <br />
-                </div>
-              </div>
-          </div>
 
           <div className="col s12 m8 offset-m2 l4">
             <div className="card small black hoverable sticky-action">

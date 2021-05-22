@@ -88,7 +88,7 @@
 
         span {
           line-height: 25px;
-          transition: color 0.25s;
+          transition: color 0.35s;
 
           @include breakpoint('<=small') {
             line-height: 18px;
