@@ -71,9 +71,16 @@ const ProjectCard = (props) => {
           <Typography paragraph>
             {props.desc}
           </Typography>
-          <div className="card-action">
-            <a href={props.link} target="_blank" rel="noreferrer">[visit the site]</a>
-          </div>
+          {props.repo
+            ? 
+            <div className="card-action">
+              <a href={props.link} target="_blank" rel="noreferrer">[deployed]</a><a href={props.repo} target="_blank" rel="noreferrer">[github repo]</a>
+            </div>
+            : 
+            <div className="card-action">
+              <a href={props.link} target="_blank" rel="noreferrer">[visit the site]</a>
+            </div>
+          }
         </CardContent>
       </Collapse>
     </Card>

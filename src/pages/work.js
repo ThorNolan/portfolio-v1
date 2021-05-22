@@ -8,6 +8,9 @@ import buddhasPalm from "../images/bp-demo-vid.mp4";
 import spp from "../images/spp-demo-vid.mp4";
 import jk from "../images/jayakratom-demo-vid.mp4";
 import lynnlottec from "../images/lynnlottec-demo-vid.mp4";
+import gighub from "../images/gighub-demo-vid.mp4";
+import eventPro from "../images/eventpro-demo.mp4";
+import memcc from "../images/memory-color-demo.mp4";
 
 const Work = () => {
 
@@ -51,68 +54,42 @@ const Work = () => {
         />
       </div>
 
+      <h4>CODE PROJECTS</h4>
       <div className="container" id="code-projects">
-        <h4>CODE PROJECTS</h4>
+        <ProjectCard 
+          title="GigHub.io"
+          link="https://gighub-io.herokuapp.com/"
+          repo="https://github.com/ltcondon/Project-3"
+          desc="A full-stack MERN app I created with a team as the final project for our bootcamp.
+          GigHub lets users log in to the app with their LinkedIn account and track their job
+          search progress. We utilized the LinkedIn OAuth API for user sign-in/sign-up, and store user data in a
+          Mongo database. Users can add jobs they’re interested in applying for and track their application progress, 
+          as well as view analytics about their job search progress." 
+          src={gighub} 
+        />
+        <ProjectCard 
+          title="EventPro"
+          link="https://limitless-fortress-24134.herokuapp.com/"
+          repo="https://github.com/ThorNolan/EventPRO"
+          desc="EventPRO is an event planning application that provides users with a centralized location
+          to plan upcoming events and organize to-do's. I was part of a team that made this app
+          for our full-stack bootcamp, and my responsibilities included setting up the MVC file
+          structure, getting our server up and running, utilizing passport and express so that
+          users could create accounts and log in (data persists in a MySQL database), and giving the app a consistent style with css." 
+          src={eventPro} 
+        />
+        <ProjectCard 
+          title="Memory Color Clicker"
+          link="https://thornolan.github.io/React-Memory-Game/"
+          repo="https://github.com/ThorNolan/React-Memory-Game"
+          desc="This is a simple memory game I built for my full-stack coding bootcamp. It was built with
+          React, which it uses it to serve up front-end content and manipulate the DOM. The game
+          is built primarily around one stateful app component that keeps track of user clicks,
+          user score and high score, and the position of content on the page which needs to be
+          re-rendered every time the user clicks." 
+          src={memcc} 
+        />
         <div className="row">
-
-          <div className="col s12 m8 offset-m2 l4">
-            <div className="card small black hoverable sticky-action">
-
-              <div className="card-image waves-effect waves-block waves-light">
-                <video className="activator responsive-video" autoPlay loop muted playsInline>
-                  <source src="../images/gighub-demo-vid.mp4" type="video/mp4" />
-                </video>
-              </div>
-
-              <div className="card-content">
-                <span className="card-title activator">GigHub.io<i className="material-icons right">search</i></span>
-              </div>
-
-              <div className="card-action">
-                <p><a href="https://gighub-io.herokuapp.com/" target="_blank" rel="noreferrer">[deployed]</a><a href="https://github.com/ltcondon/Project-3" target="_blank" rel="noreferrer">[github repo]</a></p>
-              </div>
-
-              <div className="card-reveal black">
-                <span className="card-title">GigHub.IO<i className="material-icons right">close</i></span>
-                <p>A full-stack MERN app I created with a team as the final project for our bootcamp.
-                  GigHub lets users log in to the app with their LinkedIn account and track their job
-                  search progress. We utilized the LinkedIn OAuth API for user sign-in/sign-up, and store user data in a
-                  Mongo database. Users can add
-                  jobs they’re interested in applying for and track their application progress, as well as view analytics about their job search progress.</p>
-                <br />
-              </div>
-            </div>
-          </div>
-
-          <div className="col s12 m8 offset-m2 l4">
-            <div className="card small black hoverable sticky-action">
-
-              <div className="card-image waves-effect waves-block waves-light">
-                <video className="activator responsive-video" autoPlay loop muted playsInline>
-                  <source src="../images/eventpro-demo.mp4" type="video/mp4" />
-                </video>
-              </div>
-
-              <div className="card-content">
-                <span className="card-title activator">EventPRO<i className="material-icons right">search</i></span>
-              </div>
-
-              <div className="card-action">
-                <p><a href="https://limitless-fortress-24134.herokuapp.com/"
-                  target="_blank" rel="noreferrer">[deployed]</a><a href="https://github.com/ThorNolan/EventPRO" target="_blank" rel="noreferrer">[github repo]</a></p>
-              </div>
-
-              <div className="card-reveal black">
-                <span className="card-title activator">EventPRO<i className="material-icons right">close</i></span>
-                <p>EventPRO is an event planning application that provides users with a centralized location
-                  to plan upcoming events and organize to-do's. I was part of a team that made this app
-                  for our full-stack bootcamp, and my responsibilities included setting up the MVC file
-                  structure, getting our server up and running, utilizing passport and express so that
-                  users could create accounts and log in (data persists in a MySQL database), and giving the app a consistent style with css.</p>
-                <br />
-              </div>
-            </div>
-          </div>
 
           <div className="col s12 m8 offset-m2 l4">
             <div className="card small black hoverable sticky-action">
@@ -240,40 +217,6 @@ const Work = () => {
           </div>
 
         </div>
-
-        <div className="row">
-
-          <div className="col s12 m8 offset-m2 l4">
-            <div className="card small black hoverable sticky-action">
-
-              <div className="card-image waves-effect waves-block waves-light">
-                <video className="activator responsive-video" autoPlay loop muted playsInline>
-                  <source src="../images/LIRI-Bot-vid-demo.mp4" type="video/mp4" />
-                </video>
-              </div>
-
-              <div className="card-content">
-                <span className="card-title activator">LIRI Bot<i className="material-icons right">search</i></span>
-              </div>
-
-              <div className="card-action">
-                <p><a href="https://github.com/ThorNolan/liri-node-app" target="_blank" rel="noreferrer">[CLI app, repo
-                  only]</a></p>
-              </div>
-
-              <div className="card-reveal  black">
-                <span className="card-title">LIRI Bot<i className="material-icons right">close</i></span>
-                <p>A command line Node.js app I made for my full-stack coding bootcamp. It takes in
-                  parameters and returns data to users by using the axios package to make calls to the
-                  Bands in Town, Spotify or OMDB APIs. Users can search for movies, upcoming concerts, or
-                  songs, and will be given data about them in their command line. It utilizes NPM to
-                  manage various node packages such as fs, moment, chalk, and the Node-Spotify-API.</p>
-                <br />
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
   </section>
   </>
