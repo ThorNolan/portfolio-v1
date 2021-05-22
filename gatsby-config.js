@@ -16,6 +16,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+          threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
+          once: false, // Defines if animation needs to be launched once
+          disable: false, // Flag for disabling animations
+          animateClassName: 'sal-animate', // Class name which triggers animation
+      },
+    },
+    {
       resolve: `gatsby-plugin-transition-link`,
       options: {
         layout: require.resolve(`${__dirname}/src/components/Wrapper/layout.js`),
@@ -49,7 +58,7 @@ module.exports = {
     `styled-components`,
     `node-sass`,
     `@material-ui/core`,
-    `react-awesome-reveal`,
+    `@material-ui/icons`,
     `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-plugin-offline`,
