@@ -9,6 +9,8 @@
 
 .particle-container {
   background-color: transparent;
+  min-width: 100vw;
+  min-height: 100vw;
 }
 
 .layer {
@@ -67,12 +69,12 @@
   #sun {
     margin-left: 18.5%;
     margin-top: -15%;
-    width: 280px;
+    width: 300px;
     height: auto;
   }
 
   #eclipsed {
-    width: 280px;
+    width: 300px;
     height: auto;
   }
 }
