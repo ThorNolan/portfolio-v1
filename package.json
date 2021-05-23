@@ -35,9 +35,15 @@
     "prettier": "2.2.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "react",
+    "parallax",
+    "particles",
+    "material-ui",
+    "full stack",
+    "developer"
   ],
-  "license": "0BSD",
+  "license": "ISC",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -52,6 +58,6 @@
     "url": "https://github.com/ThorNolan/react-portfolio-codebase.git"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ThorNolan/ThorNolan.github.io/issues"
   }
 }

@@ -8,19 +8,23 @@ import "./header.scss"
 const Header = (props) => {
   const getColor = (props) => {
     const location = props.location;
-    if (location.includes("about") || location.includes("work")) {
-      return "#232320"
-    } else {
-      return "#FEFAF6"
+    if (location) {
+      if (location.includes("about") || location.includes("work")) {
+        return "#232320"
+      } else {
+        return "#FEFAF6"
+      }
     }
   }
 
   const getBackground = (props) => {
     const location = props.location;
-    if (location.includes("about") || location.includes("work")) {
-      return "#FEFAF6"
-    } else {
-      return "rgba(0,0,0,0)"
+    if (location) {
+      if (location.includes("about") || location.includes("work")) {
+        return "#FEFAF6"
+      } else {
+        return "rgba(0,0,0,0)"
+      }
     }
   }
 
