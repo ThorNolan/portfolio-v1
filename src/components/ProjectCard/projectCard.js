@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   media: {
     height: 0,
-    paddingBottom: '47.5%',
+    paddingBottom: '47%',
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -51,7 +51,7 @@ const ProjectCard = (props) => {
       >
         <video src={props.src} width='100%' height='auto' autoPlay loop muted playsInline/>
       </CardMedia>
-      <CardContent className="card-body clearfix">
+      <CardContent className="card-body">
         <Typography variant="body2" component="h5" className="client-title">
           {props.title}
         </Typography>
