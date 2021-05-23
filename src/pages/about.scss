@@ -7,7 +7,14 @@
     height: auto;
     float: left;
     margin-right: 2.5rem;
-    margin-right: 2.5rem;
+
+    @include breakpoint('<=medium') {
+      margin-right: 1rem;
+    }
+
+    @include breakpoint('<=small') {
+      width: 175px;
+    }
   }
 
   .about-row {
@@ -16,6 +23,14 @@
 
   .about-text {
     padding-right: 2.5rem;
+
+    @include breakpoint('<=medium') {
+      padding-right: 0.5rem;
+    }
+
+    @include breakpoint('<=small') {
+      padding-right: 0;
+    }
   }
 
   h4 {
@@ -56,11 +71,9 @@
       text-decoration: underline;
     }
   }
-}
 
-@include breakpoint('<=xsmall') {
-  #intro {
-    margin-top: 25px;
+  @include breakpoint('<=large') {
+    padding-top: 5rem;
   }
 }
 

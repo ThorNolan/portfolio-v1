@@ -15,10 +15,19 @@ const Header = (props) => {
     }
   }
 
+  const getBackground = (props) => {
+    const location = props.location;
+    if (location.includes("about") || location.includes("work")) {
+      return "#FEFAF6"
+    } else {
+      return "rgba(0,0,0,0)"
+    }
+  }
+
   return (
   <header>
     <div id="navigation">
-      <nav id="up">
+      <nav id="up" style={{background: `${getBackground(props)}`}}>
         <div className="container">
           <div>
             <Link 

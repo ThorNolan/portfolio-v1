@@ -41,4 +41,9 @@
     align-items: center;
     max-width: 1260px;
   }
+
+  
+  @include breakpoint('<=small') {
+    padding-top: 5rem;
+  }
 }

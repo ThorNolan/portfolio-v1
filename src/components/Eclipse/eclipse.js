@@ -86,7 +86,7 @@ const Eclipse = () => {
             id="eclipsed"
             loading="eager"
             src="../../images/new-eclipsed-moon.png"
-            alt="Eclipsed moon with text: Thor Nolan, full-stack web developer and designer"
+            alt="Eclipsed moon with text: Thor Nolan, full stack web developer and designer"
             quality={95} formats={["AUTO", "WEBP", "AVIF"]}
             data-sal="slide-up" data-sal-delay="300" data-sal-duration="550" data-sal-easing="ease"
           />

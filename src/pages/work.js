@@ -2,6 +2,7 @@ import * as React from "react";
 
 import Seo from "../components/Wrapper/seo.js";
 import ProjectCard from "../components/ProjectCard/projectCard.js";
+import Preloader from "../components/Wrapper/preloader.js"
 import "./work.scss";
 
 import buddhasPalm from "../images/bp-demo-vid.mp4";
@@ -16,6 +17,19 @@ import mernBooks from "../images/mern-book-search.mp4";
 import exiFf from "../images/friend-finder-demo-vid.mp4";
 
 const Work = () => {
+  const [
+    hasMounted,
+    setHasMounted,
+  ] = React.useState(false);
+
+  
+  React.useEffect(() => {
+    setHasMounted(true)
+  }, [])
+
+  if (!hasMounted) {
+    return <Preloader />
+  }
 
   return (
     <>
@@ -43,8 +57,8 @@ const Work = () => {
         <ProjectCard 
           title="Jaya Kratom"
           link="https://www.jayakratom.com/"
-          desc="A fully customised Wordpress theme that I made for my client Jaya Kratom, a Kratom dispensary based in Portland, OR. 
-          I leveraged Elementor pro and a lot of custom CSS to accomplish the design, and set up a BTC payserver to accept alternative currencies." 
+          desc="A fully customised Wordpress theme that I made for my client Jaya Kratom, a kratom dispensary based in Portland, OR. 
+          I leveraged Elementor pro and a lot of custom CSS to accomplish the design, and also set up a BTC payserver to accept alternative currencies." 
           src={jk}
         />
         <ProjectCard 
